@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wells of Revival</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/ministry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.jpeg">
+
+</head>
+<body>
+    <!-- Quick Announcements Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <p>Join us this Sunday for a special service at 9:00 AM</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <span>Wells of Revival</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="sermons.html">Sermons</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="events.html">Events</a>
+            <a href="announcements.html">RE Ministry</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="giving.html" class="donate-btn">Give</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section with Video Background
+    <section class="ministry-hero contact-hero">
+        <div class="image-background">
+            <div class="image-foreground">
+                <div class="image-grid">
+                    <div class="hero-image" style="background-image: url('images/worship1.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/worship2.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/welcome.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/prayer.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/community.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/service.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/worship3.jpg');"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ministry-hero-content container contact-hero-content">
+            <h1 class="fade-in">Connect With Us</h1>
+            <p class="subtitle fade-in">We'd love to hear from you</p>
+        </div>
+    </section> -->
+
+    <section class="ministry-hero">
+        <div class="image-background">
+            <img src="images/wells.jpg" alt="Church" class="hero-full-image">
+            <div class="image-foreground"></div>
+        </div>
+        <div class="ministry-hero-content container about-hero-content">
+            <h1 class="fade-in" style="color: white !important;">Connect with us</h1>
+            <p class="subtitle fade-in">We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info fade-on-scroll">
+        <div class="container">
+            <div class="info-cards">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit Us</h3>
+                    <p>Wells of Revival Church</p>
+                    <p>Majengo, Thika, Kenya</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>+254 XXX XXX XXX</p>
+                    <p>+254 XXX XXX XXX</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>example@wellsofrevival.org</p>
+                    <p>example@wellsofrevival.org</p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Service Times</h3>
+                    <p>Sunday: 8:00 AM - 12:00 PM</p>
+                    <p>Wednesday: 6:00 PM - 7:30 PM</p>
+                    <p>Wednesday: 9:00 PM - 9:30 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form fade-on-scroll">
+        <div class="container">
+            <h2>Send Us a Message</h2>
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Your Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="prayer">Prayer Request</option>
+                            <option value="visit">First-Time Visit</option>
+                            <option value="volunteer">Volunteer Opportunities</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section fade-on-scroll">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <!-- Replace with actual Google Maps embed code -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.499096747871!2d37.08165767404412!3d-1.0362134354020058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4e62b53da841%3A0xbed071bf1770a28c!2sWells%20of%20Revival%20Ministries!5e1!3m2!1sen!2ske!4v1748000445027!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Request Section -->
+    <section class="prayer-request fade-on-scroll">
+        <div class="container">
+            <div class="prayer-content">
+                <div class="prayer-text">
+                    <h2>Need Prayer?</h2>
+                    <p>Our prayer team is committed to praying for your needs. Submit your prayer request, and we will stand with you in faith.</p>
+                    <p>All prayer requests are kept confidential and are shared only with our dedicated prayer team.</p>
+                    <a href="#" class="prayer-btn">Submit Prayer Request</a>
+                </div>
+                <div class="prayer-image">
+                    <img src="images/prayer.jpg" alt="Prayer Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <h3>Wells of Revival</h3>
+                <p>Transforming Lives Through Christ</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="sermons.html">Sermons</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+                <a href="giving.html">Give</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Majengo, Thika, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 XXX XXX XXX</p>
+                <p><i class="fas fa-envelope"></i> example@wellsofrevival.org</p>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wells of Revival. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/ministry.js"></script>
+</body>
+</html>

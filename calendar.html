@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar - Wells of Revival</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/ministry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.jpeg">
+
+</head>
+<body>
+    <!-- Quick Announcements Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <p>Join us this Sunday for a special service at 9:00 AM</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <span>Wells of Revival</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="sermons.html">Sermons</a>
+            <a href="calendar.html" class="active">Calendar</a>
+            <a href="events.html">Events</a>
+            <a href="announcements.html">RE Ministry</a>
+            <a href="contact.html">Contact</a>
+            <a href="giving.html" class="donate-btn">Give</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Calendar Hero Section with Video Background -->
+    <!-- <section class="ministry-hero calendar-hero">
+        <div class="image-background">
+            <div class="image-foreground">
+                <div class="image-grid">
+                    <div class="hero-image" style="background-image: url('images/worship1.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/worship2.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/welcome.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/prayer.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/community.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/service.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/worship3.jpg');"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ministry-hero-content container calendar-hero-content">
+            <h1 class="fade-in">Church Calendar</h1>
+            <p class="subtitle fade-in">Stay informed about all our activities</p>
+        </div>
+    </section> -->
+
+
+        <section class="ministry-hero">
+        <div class="image-background">
+            <img src="images/calendar.jpg" alt="Church" class="hero-full-image">
+            <div class="image-foreground"></div>
+        </div>
+        <div class="ministry-hero-content container about-hero-content">
+            <h1 class="fade-in" style="color: white !important;">Church Calender</h1>
+            <p class="subtitle fade-in">Stay informed about all activities</p>
+        </div>
+    </section>
+    
+
+    <!-- Calendar Navigation Section -->
+    <section class="calendar-navigation fade-on-scroll">
+        <div class="container">
+            <div class="calendar-controls">
+                <div class="month-navigation">
+                    <button id="prev-month" class="month-nav-btn"><i class="fas fa-chevron-left"></i></button>
+                    <h2 id="current-month">June 2025</h2>
+                    <button id="next-month" class="month-nav-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="view-options">
+                    <button id="month-view" class="view-btn active">Month</button>
+                    <button id="week-view" class="view-btn">Week</button>
+                    <button id="list-view" class="view-btn">List</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Month View Section -->
+    <section class="calendar-month-view fade-on-scroll" id="month-view-container">
+        <div class="container">
+            <div class="calendar-grid">
+                <!-- Calendar Header (Days of Week) -->
+                <div class="calendar-header">
+                    <div class="calendar-cell">Sunday</div>
+                    <div class="calendar-cell">Monday</div>
+                    <div class="calendar-cell">Tuesday</div>
+                    <div class="calendar-cell">Wednesday</div>
+                    <div class="calendar-cell">Thursday</div>
+                    <div class="calendar-cell">Friday</div>
+                    <div class="calendar-cell">Saturday</div>
+                </div>
+                
+                <!-- Calendar Body (Days of Month) -->
+                <div class="calendar-body">
+                    <!-- Week 1 -->
+                    <div class="calendar-cell prev-month">28</div>
+                    <div class="calendar-cell prev-month">29</div>
+                    <div class="calendar-cell prev-month">30</div>
+                    <div class="calendar-cell prev-month">31</div>
+                    <div class="calendar-cell">1</div>
+                    <div class="calendar-cell">2</div>
+                    <div class="calendar-cell">3</div>
+                    
+                    <!-- Week 2 -->
+                    <div class="calendar-cell">
+                        <span class="date">4</span>
+                        <div class="event-indicator sunday-service">
+                            <span>Sunday Service</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell">5</div>
+                    <div class="calendar-cell">6</div>
+                    <div class="calendar-cell">
+                        <span class="date">7</span>
+                        <div class="event-indicator bible-study">
+                            <span>Bible Study</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell">8</div>
+                    <div class="calendar-cell">9</div>
+                    <div class="calendar-cell">10</div>
+                    
+                    <!-- Week 3 -->
+                    <div class="calendar-cell">
+                        <span class="date">11</span>
+                        <div class="event-indicator sunday-service">
+                            <span>Sunday Service</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell">12</div>
+                    <div class="calendar-cell">13</div>
+                    <div class="calendar-cell">
+                        <span class="date">14</span>
+                        <div class="event-indicator bible-study">
+                            <span>Bible Study</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell">15</div>
+                    <div class="calendar-cell">16</div>
+                    <div class="calendar-cell">17</div>
+                    
+                    <!-- Week 4 -->
+                    <div class="calendar-cell">
+                        <span class="date">18</span>
+                        <div class="event-indicator sunday-service">
+                            <span>Sunday Service</span>
+                        </div>
+                        <div class="event-indicator special-event">
+                            <span>Worship Night</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell">19</div>
+                    <div class="calendar-cell">20</div>
+                    <div class="calendar-cell">
+                        <span class="date">21</span>
+                        <div class="event-indicator bible-study">
+                            <span>Bible Study</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell">22</div>
+                    <div class="calendar-cell">23</div>
+                    <div class="calendar-cell">24</div>
+                    
+                    <!-- Week 5 -->
+                    <div class="calendar-cell">
+                        <span class="date">25</span>
+                        <div class="event-indicator sunday-service">
+                            <span>Sunday Service</span>
+                        </div>
+                        <div class="event-indicator special-event">
+                            <span>Prayer & Fasting</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell">
+                        <span class="date">26</span>
+                        <div class="event-indicator special-event">
+                            <span>Prayer & Fasting</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell">
+                        <span class="date">27</span>
+                        <div class="event-indicator special-event">
+                            <span>Prayer & Fasting</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell">
+                        <span class="date">28</span>
+                        <div class="event-indicator bible-study">
+                            <span>Bible Study</span>
+                        </div>
+                        <div class="event-indicator special-event">
+                            <span>Prayer & Fasting</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell">
+                        <span class="date">29</span>
+                        <div class="event-indicator special-event">
+                            <span>Prayer & Fasting</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell">
+                        <span class="date">30</span>
+                        <div class="event-indicator special-event">
+                            <span>Prayer & Fasting</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell next-month">1</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Week View Section -->
+    <section class="calendar-week-view fade-on-scroll" id="week-view-container" style="display: none;">
+        <div class="container">
+            <div class="week-header">
+                <div class="time-column">Time</div>
+                <div class="day-column">Sunday<br>18</div>
+                <div class="day-column">Monday<br>19</div>
+                <div class="day-column">Tuesday<br>20</div>
+                <div class="day-column">Wednesday<br>21</div>
+                <div class="day-column">Thursday<br>22</div>
+                <div class="day-column">Friday<br>23</div>
+                <div class="day-column">Saturday<br>24</div>
+            </div>
+            
+            <div class="week-body">
+                <!-- Time slots -->
+                <div class="time-row">
+                    <div class="time-slot">6:00 AM</div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                </div>
+                
+                <div class="time-row">
+                    <div class="time-slot">7:00 AM</div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                </div>
+                
+                <div class="time-row">
+                    <div class="time-slot">8:00 AM</div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                </div>
+                
+                <div class="time-row">
+                    <div class="time-slot">9:00 AM</div>
+                    <div class="event-slot sunday-service">Sunday Service<br>9:00 AM - 12:00 PM</div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                </div>
+                
+                <!-- More time slots would continue here -->
+                
+                <div class="time-row">
+                    <div class="time-slot">6:00 PM</div>
+                    <div class="event-slot special-event">Worship Night<br>6:00 PM - 8:00 PM</div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot bible-study">Bible Study<br>6:00 PM - 7:30 PM</div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                    <div class="event-slot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar List View Section -->
+    <section class="calendar-list-view fade-on-scroll" id="list-view-container" style="display: none;">
+        <div class="container">
+            <div class="event-list">
+                <div class="event-list-item">
+                    <div class="event-date">
+                        <span class="event-day">4</span>
+                        <span class="event-month">Jun</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Sunday Service</h3>
+                        <p class="event-meta">
+                            <span><i class="fas fa-clock"></i> 9:00 AM - 12:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Main Sanctuary</span>
+                        </p>
+                        <p class="event-description">Regular Sunday worship service with praise, prayer, and preaching.</p>
+                    </div>
+                </div>
+                
+                <div class="event-list-item">
+                    <div class="event-date">
+                        <span class="event-day">7</span>
+                        <span class="event-month">Jun</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Bible Study</h3>
+                        <p class="event-meta">
+                            <span><i class="fas fa-clock"></i> 6:00 PM - 7:30 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Fellowship Hall</span>
+                        </p>
+                        <p class="event-description">Midweek Bible study focusing on the book of Romans.</p>
+                    </div>
+                </div>
+                
+                <div class="event-list-item">
+                    <div class="event-date">
+                        <span class="event-day">11</span>
+                        <span class="event-month">Jun</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Sunday Service</h3>
+                        <p class="event-meta">
+                            <span><i class="fas fa-clock"></i> 9:00 AM - 12:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Main Sanctuary</span>
+                        </p>
+                        <p class="event-description">Regular Sunday worship service with praise, prayer, and preaching.</p>
+                    </div>
+                </div>
+                
+                <!-- More list items would continue here -->
+                
+                <div class="event-list-item">
+                    <div class="event-date">
+                        <span class="event-day">18</span>
+                        <span class="event-month">Jun</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Worship Night</h3>
+                        <p class="event-meta">
+                            <span><i class="fas fa-clock"></i> 6:00 PM - 8:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Main Sanctuary</span>
+                        </p>
+                        <p class="event-description">An evening of praise and worship to experience God's presence and glory.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Legend Section -->
+    <section class="calendar-legend fade-on-scroll">
+        <div class="container">
+            <h3>Event Legend</h3>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <span class="legend-color sunday-service"></span>
+                    <span class="legend-text">Sunday Service</span>
+                </div>
+                
+                <div class="legend-item">
+                    <span class="legend-color bible-study"></span>
+                    <span class="legend-text">Bible Study</span>
+                </div>
+                
+                <div class="legend-item">
+                    <span class="legend-color special-event"></span>
+                    <span class="legend-text">Special Events</span>
+                </div>
+                
+                <div class="legend-item">
+                    <span class="legend-color youth-event"></span>
+                    <span class="legend-text">Youth Events</span>
+                </div>
+                
+                <div class="legend-item">
+                    <span class="legend-color outreach"></span>
+                    <span class="legend-text">Outreach</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Download Section -->
+    <section class="calendar-download fade-on-scroll">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2>Take Our Calendar With You</h2>
+                    <p>Never miss an event! Download our calendar to your device or subscribe to receive automatic updates.</p>
+                    <div class="download-buttons">
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download Calendar</a>
+                        <a href="#" class="subscribe-btn"><i class="fas fa-bell"></i> Subscribe to Updates</a>
+                    </div>
+                </div>
+                <div class="download-image">
+                    <img src="images/calendar-mobile.png" alt="Calendar on Mobile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <h3>Wells of Revival</h3>
+                <p>Transforming Lives Through Christ</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="sermons.html">Sermons</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+                <a href="giving.html">Give</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Majengo, Thika, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 XXX XXX XXX</p>
+                <p><i class="fas fa-envelope"></i> info@wellsofrevival.org</p>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wells of Revival. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/ministry.js"></script>
+</body>
+</html>

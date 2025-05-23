@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sermons - Wells of Revival</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sermon.css">
+    <link rel="stylesheet" href="css/ministry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.jpeg">
+
+</head>
+<body>
+    <!-- Quick Announcements Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <p>Join us this Sunday for a special service at 9:00 AM</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <span>Wells of Revival</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="sermons.html" class="active">Sermons</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="events.html">Events</a>
+            <a href="announcements.html">RE Ministry</a>
+            <a href="contact.html">Contact</a>
+            <a href="giving.html" class="donate-btn">Give</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Sermons Hero Section -->
+    <!-- Sermons Hero Section with Video Background -->
+    <!-- <section class="ministry-hero sermons-hero">
+        <div class="image-background">
+            <div class="image-foreground">
+                <div class="image-grid">
+                    <div class="hero-image" style="background-image: url('images/worship1.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/worship2.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/welcome.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/prayer.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/community.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/service.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/worship3.jpg');"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ministry-hero-content container sermons-hero-content">
+            <h1 class="fade-in">Sermons & Teachings</h1>
+            <p class="subtitle fade-in">Grow in faith through the Word of God</p>
+        </div>
+    </section> -->
+
+            
+    <section class="ministry-hero">
+        <div class="image-background">
+            <img src="images/sermons.jpg" alt="Church" class="hero-full-image">
+            <div class="image-foreground"></div>
+        </div>
+        <div class="ministry-hero-content container about-hero-content">
+            <h1 class="fade-in" style="color: white !important;">Sermons & Teachings</h1>
+            <p class="subtitle fade-in">Grow in faith through the Word of God</p>
+        </div>
+    </section>
+
+
+
+    
+
+    <!-- Sermons Filter Section -->
+    <section class="sermons-filter">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="speaker-filter">Speaker:</label>
+                    <select id="speaker-filter">
+                        <option value="all">All Speakers</option>
+                        <option value="bishop-ayisi">Bishop Ayisi</option>
+                        <option value="guest-speaker">Guest Speakers</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="topic-filter">Topic:</label>
+                    <select id="topic-filter">
+                        <option value="all">All Topics</option>
+                        <option value="faith">Faith</option>
+                        <option value="prayer">Prayer</option>
+                        <option value="holy-spirit">Holy Spirit</option>
+                        <option value="family">Family</option>
+                        <option value="healing">Healing</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="series-filter">Series:</label>
+                    <select id="series-filter">
+                        <option value="all">All Series</option>
+                        <option value="revival">Path to Revival</option>
+                        <option value="purpose">Discovering Your Purpose</option>
+                        <option value="faith">Faith That Moves Mountains</option>
+                    </select>
+                </div>
+                
+                <button id="filter-button" class="filter-btn">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Sermon -->
+    <section class="featured-sermon fade-on-scroll">
+        <div class="container">
+            <h2>Featured Message</h2>
+            <div class="featured-sermon-container">
+                <div class="featured-video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VIDEO_ID" title="Featured Sermon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="featured-details">
+                    <h3>The Power of Revival</h3>
+                    <p class="sermon-meta">
+                        <span><i class="fas fa-user"></i> Bishop Ayisi</span>
+                        <span><i class="fas fa-calendar"></i> [Date]</span>
+                        <span><i class="fas fa-tag"></i> [Title]</span>
+                    </p>
+                    <p class="sermon-description">[Message]</p>
+                    <div class="sermon-actions">
+                        <a href="#" class="sermon-action-btn"><i class="fas fa-download"></i> Download</a>
+                        <a href="#" class="sermon-action-btn"><i class="fas fa-share-alt"></i> Share</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sermon Grid -->
+    <section class="sermon-grid fade-on-scroll">
+        <div class="container">
+            <h2>Recent Sermons</h2>
+            <div class="sermons-container">
+                <!-- Sermon Card 1 -->
+                <div class="sermon-card" data-speaker="bishop-ayisi" data-topic="faith" data-series="revival">
+                    <div class="sermon-thumbnail">
+                        <img src="images/sermons/sermon1.jpg" alt="Sermon Thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="sermon-info">
+                        <h3>[Title]</h3>
+                        <p class="sermon-meta">
+                            <span><i class="fas fa-user"></i> Bishop Ayisi</span>
+                            <span><i class="fas fa-calendar"></i>[Date]</span>
+                        </p>
+                        <p class="sermon-excerpt">[Message]</p>
+                        <div class="sermon-actions">
+                            <a href="#" class="sermon-action-btn"><i class="fas fa-play"></i> Watch</a>
+                            <a href="#" class="sermon-action-btn"><i class="fas fa-headphones"></i> Listen</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sermon Card 2 -->
+                <div class="sermon-card" data-speaker="guest-speaker" data-topic="prayer" data-series="purpose">
+                    <div class="sermon-thumbnail">
+                        <img src="images/sermons/sermon2.jpg" alt="Sermon Thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="sermon-info">
+                        <h3>[Title]</h3>
+                        <p class="sermon-meta">
+                            <span><i class="fas fa-user"></i>[Speaker]</span>
+                            <span><i class="fas fa-calendar"></i> [Date]</span>
+                        </p>
+                        <p class="sermon-excerpt">[Message]</p>
+                        <div class="sermon-actions">
+                            <a href="#" class="sermon-action-btn"><i class="fas fa-play"></i> Watch</a>
+                            <a href="#" class="sermon-action-btn"><i class="fas fa-headphones"></i> Listen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sermon-card" data-speaker="bishop-ayisi" data-topic="holy-spirit" data-series="revival">
+                    <div class="sermon-thumbnail">
+                        <img src="images/sermons/sermon3.jpg" alt="Sermon Thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="sermon-info">
+                        <h3>[Title]</h3>
+                        <p class="sermon-meta">
+                            <span><i class="fas fa-user"></i> [Speaker]</span>
+                            <span><i class="fas fa-calendar"></i> [Date]</span>
+                        </p>
+                        <p class="sermon-excerpt">Learn how to live a Spirit-led life and experience the fullness of God's presence daily.</p>
+                        <div class="sermon-actions">
+                            <a href="#" class="sermon-action-btn"><i class="fas fa-play"></i> Watch</a>
+                            <a href="#" class="sermon-action-btn"><i class="fas fa-headphones"></i> Listen</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sermon Card 4 -->
+                <div class="sermon-card" data-speaker="bishop-ayisi" data-topic="family" data-series="purpose">
+                    <div class="sermon-thumbnail">
+                        <img src="images/sermons/sermon4.jpg" alt="Sermon Thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="sermon-info">
+                        <h3>[Title]</h3>
+                        <p class="sermon-meta">
+                            <span><i class="fas fa-user"></i>[Speaker]</span>
+                            <span><i class="fas fa-calendar"></i> [Date]</span>
+                        </p>
+                        <p class="sermon-excerpt">[Message].</p>
+                        <div class="sermon-actions">
+                            <a href="#" class="sermon-action-btn"><i class="fas fa-play"></i> Watch</a>
+                            <a href="#" class="sermon-action-btn"><i class="fas fa-headphones"></i> Listen</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sermon Card 5 -->
+                <div class="sermon-card" data-speaker="guest-speaker" data-topic="healing" data-series="faith">
+                    <div class="sermon-thumbnail">
+                        <img src="images/sermons/sermon5.jpg" alt="Sermon Thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="sermon-info">
+                        <h3[Title]</h3>
+                        <p class="sermon-meta">
+                            <span><i class="fas fa-user"></i> [Speaker]</span>
+                            <span><i class="fas fa-calendar"></i> [Date]</span>
+                        </p>
+                        <p class="sermon-excerpt">[Message]</p>
+                        <div class="sermon-actions">
+                            <a href="#" class="sermon-action-btn"><i class="fas fa-play"></i> Watch</a>
+                            <a href="#" class="sermon-action-btn"><i class="fas fa-headphones"></i> Listen</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sermon Card 6 -->
+                <div class="sermon-card" data-speaker="bishop-ayisi" data-topic="faith" data-series="faith">
+                    <div class="sermon-thumbnail">
+                        <img src="images/sermons/sermon6.jpg" alt="Sermon Thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="sermon-info">
+                        <h3>[Title]</h3>
+                        <p class="sermon-meta">
+                            <span><i class="fas fa-user"></i> [Speaker]</span>
+                            <span><i class="fas fa-calendar"></i> [Date]</span>
+                        </p>
+                        <p class="sermon-excerpt">[Message]</p>
+                        <div class="sermon-actions">
+                            <a href="#" class="sermon-action-btn"><i class="fas fa-play"></i> Watch</a>
+                            <a href="#" class="sermon-action-btn"><i class="fas fa-headphones"></i> Listen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="pagination-btn active">1</a>
+                <a href="#" class="pagination-btn">2</a>
+                <a href="#" class="pagination-btn">3</a>
+                <a href="#" class="pagination-btn next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sermon Series Section -->
+    <section class="sermon-series fade-on-scroll">
+        <div class="container">
+            <h2>Popular Series</h2>
+            <div class="series-container">
+                <div class="series-card">
+                    <img src="images/series/revival.jpg" alt="Path to Revival Series">
+                    <div class="series-info">
+                        <h3>Path to Revival</h3>
+                        <p>A 5-part series on experiencing personal and corporate revival.</p>
+                        <a href="#" class="series-btn">View Series</a>
+                    </div>
+                </div>
+                
+                <div class="series-card">
+                    <img src="images/series/purpose.jpg" alt="Discovering Your Purpose Series">
+                    <div class="series-info">
+                        <h3>Discovering Your Purpose</h3>
+                        <p>A 4-part series on finding and fulfilling God's purpose for your life.</p>
+                        <a href="#" class="series-btn">View Series</a>
+                    </div>
+                </div>
+                
+                <div class="series-card">
+                    <img src="images/series/faith.jpg" alt="Faith That Moves Mountains Series">
+                    <div class="series-info">
+                        <h3>Faith That Moves Mountains</h3>
+                        <p>A 6-part series on developing mountain-moving faith.</p>
+                        <a href="#" class="series-btn">View Series</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <h3>Wells of Revival</h3>
+                <p>Transforming Lives Through Christ</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="sermons.html">Sermons</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+                <a href="giving.html">Give</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Majengo, Thika, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 XXX XXX XXX</p>
+                <p><i class="fas fa-envelope"></i> example@wellsofrevival.org</p>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wells of Revival. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/sermons.js"></script>
+    <script src="js/ministry.js"></script>
+</body>
+</html>
+
+
+
+
+
+

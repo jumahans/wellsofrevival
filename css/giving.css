@@ -1,0 +1,1112 @@
+/* Giving Page Specific Styles */
+
+/* Giving Hero Section */
+.giving-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/giving-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.giving-hero-content {
+    max-width: 800px;
+    padding: 2rem;
+    z-index: 2;
+}
+
+.giving-hero h1 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.giving-hero .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.scripture {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.scripture p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Why Give Section */
+.why-give {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: white;
+}
+
+.why-give h2 {
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.giving-principles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.principle-card {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    padding: 2.5rem 2rem;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.principle-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.principle-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.principle-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.principle-card p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Ways to Give Section */
+.ways-to-give {
+    padding: 5rem 2rem;
+    background-color: var(--light-color);
+}
+
+.ways-to-give h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.giving-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.giving-method {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.giving-method:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.method-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    min-width: 100px;
+}
+
+.method-icon i {
+    font-size: 2.5rem;
+}
+
+.method-details {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.method-details h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.method-details p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.method-instructions {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.method-instructions p {
+    margin-bottom: 0.5rem;
+}
+
+.method-instructions p:last-child {
+    margin-bottom: 0;
+}
+
+.method-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.method-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Giving Categories Section */
+.giving-categories {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: white;
+}
+
+.giving-categories h2 {
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-card {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.category-icon i {
+    font-size: 2rem;
+}
+
+.category-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.category-card p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Testimonials Section */
+.giving-testimonials {
+    padding: 5rem 2rem;
+    background-color: var(--light-color);
+    text-align: center;
+}
+
+.giving-testimonials h2 {
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.testimonials-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial-slide {
+    display: none;
+    animation: fadeEffect 1s;
+}
+
+.testimonial-slide:first-child {
+    display: block;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+.testimonial-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.testimonial-content:before {
+    content: '\201C';
+    font-size: 4rem;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: var(--accent-color);
+    opacity: 0.3;
+    font-family: 'Playfair Display', serif;
+}
+
+.testimonial-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 3px solid var(--accent-color);
+}
+
+.author-info h4 {
+    color: var(--secondary-color);
+    margin-bottom: 0.3rem;
+}
+
+.author-info p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+.testimonial-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.testimonial-nav button {
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-nav button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Financial Accountability Section */
+.financial-accountability {
+    padding: 5rem 2rem;
+    background-color: white;
+}
+
+.financial-accountability h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.accountability-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.accountability-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.accountability-text p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.accountability-text ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.accountability-text li {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.accountability-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: var(--transition);
+    margin-top: 1rem;
+}
+
+.accountability-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.accountability-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.accountability-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .giving-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .categories-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .giving-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .giving-hero .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .scripture {
+        padding: 1rem;
+    }
+    
+    .scripture p {
+        font-size: 1rem;
+    }
+    
+    .principle-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .method-icon {
+        padding: 1.5rem;
+        min-width: 80px;
+    }
+    
+    .method-icon i {
+        font-size: 2rem;
+    }
+    
+    .method-details {
+        padding: 1.5rem;
+    }
+    
+    .testimonial-content {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .giving-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .giving-hero .subtitle {
+        font-size: 1rem;
+    }
+    
+    .scripture p {
+        font-size: 0.9rem;
+    }
+    
+    .giving-method {
+        flex-direction: column;
+    }
+    
+    .method-icon {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    
+    .testimonial-content {
+        padding: 1.5rem;
+    }
+    
+    .testimonial-content:before {
+        font-size: 3rem;
+    }
+    
+    .testimonial-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+.fade-in:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.fade-in:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-on-scroll.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Additional Styles for Giving Page */
+
+/* Hover effects for principle cards */
+.principle-card:hover i {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effects for category cards */
+.category-card:hover .category-icon {
+    background-color: var(--accent-color);
+    transform: rotate(10deg);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Giving method hover effects */
+.giving-method:hover .method-icon {
+    background-color: var(--accent-color);
+}
+
+/* Testimonial author image hover effect */
+.testimonial-author img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Accountability image hover effect */
+.accountability-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Giving JavaScript Support Styles */
+.testimonial-slide.active {
+    display: block;
+}
+
+/* Giving form styles (for potential future use) */
+.giving-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(139, 90, 43, 0.2);
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 250px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.checkbox-group input {
+    margin-right: 0.5rem;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Giving FAQ Section (for potential future use) */
+.giving-faq {
+    padding: 5rem 2rem;
+    background-color: var(--light-color);
+}
+
+.giving-faq h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer.active {
+    padding: 0 1.5rem 1.5rem;
+    max-height: 500px;
+}
+
+.faq-answer p {
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Giving Impact Section (for potential future use) */
+.giving-impact {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: white;
+}
+
+.giving-impact h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.giving-impact p.section-intro {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    color: var(--text-color);
+}
+
+.impact-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+}
+
+.impact-stat {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.impact-stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.impact-story {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.impact-story:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.story-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.impact-story:hover .story-image img {
+    transform: scale(1.1);
+}
+
+.story-content {
+    padding: 1.5rem;
+}
+
+.story-content h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.story-content p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.read-more {
+    color: var(--primary-color);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+.read-more i {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover i {
+    transform: translateX(5px);
+}
+
+/* Giving Call to Action (for potential future use) */
+.giving-cta {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/giving-cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.giving-cta h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.giving-cta p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.cta-primary {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+}
+
+.cta-primary:hover {
+    background-color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-secondary:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.financial-accountability {
+    padding: 5rem 2rem;
+    background-color: white;
+}
+
+.financial-accountability h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.financial-accountability h2:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.accountability-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--light-color);
+    border-radius: 15px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.accountability-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.accountability-text p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.accountability-text p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.accountability-text ul {
+    margin: 2rem 0;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--primary-color);
+}
+
+.accountability-text li {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.accountability-text li:before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--primary-color);
+    position: absolute;
+    left: -1.5rem;
+}
+
+.accountability-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(139, 90, 43, 0.2);
+}
+
+.accountability-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.accountability-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+}
+
+.accountability-image:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--accent-color);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.accountability-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.5s ease;
+}
+
+.accountability-image:hover img {
+    transform: translate(-10px, -10px);
+}
+
+/* Responsive adjustments for Financial Accountability */
+@media screen and (max-width: 992px) {
+    .accountability-content {
+        padding: 2rem;
+    }
+    
+    .accountability-image:before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .accountability-content {
+        flex-direction: column-reverse;
+    }
+    
+    .accountability-image {
+        margin-bottom: 2rem;
+    }
+    
+    .accountability-text ul {
+        margin: 1.5rem 0;
+    }
+    
+    .accountability-text li {
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .financial-accountability h2 {
+        font-size: 2rem;
+    }
+    
+    .accountability-content {
+        padding: 1.5rem;
+    }
+    
+    .accountability-text p:first-of-type {
+        font-size: 1.1rem;
+    }
+    
+    .accountability-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+

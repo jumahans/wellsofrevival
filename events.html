@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Wells of Revival</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/ministry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.jpeg">
+
+</head>
+<body>
+    <!-- Quick Announcements Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <p>Join us this Sunday for a special service at 9:00 AM</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <span>Wells of Revival</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="sermons.html">Sermons</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="announcements.html">RE Ministry</a>
+            <a href="contact.html">Contact</a>
+            <a href="giving.html" class="donate-btn">Give</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Events Hero Section with Video Background -->
+    <!-- <section class="ministry-hero events-hero">
+        <div class="image-background">
+            <div class="image-foreground">
+                <div class="image-grid">
+                    <div class="hero-image" style="background-image: url('images/worship1.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/worship2.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/welcome.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/prayer.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/community.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/service.jpg');"></div>
+                    <div class="hero-image" style="background-image: url('images/worship3.jpg');"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ministry-hero-content container events-hero-content">
+            <h1 class="fade-in">Upcoming Events</h1>
+            <p class="subtitle fade-in">Join us for life-changing experiences</p>
+        </div>
+    </section> -->
+
+
+    <section class="ministry-hero">
+        <div class="image-background">
+            <img src="images/events.webp" alt="Church" class="hero-full-image">
+            <div class="image-foreground"></div>
+        </div>
+        <div class="ministry-hero-content container about-hero-content">
+            <h1 class="fade-in" style="color: white !important;">Upcoming Events</h1>
+            <p class="subtitle fade-in">Join us for life-changing experiences</p>
+        </div>
+    </section>
+
+    <!-- Featured Event Section -->
+    <section class="featured-event fade-on-scroll">
+        <div class="container">
+            <div class="featured-event-banner">
+                <div class="featured-event-content">
+                    <div class="event-badge">Featured Event</div>
+                    <h2>Family Sunday 2025 April </h2>
+                    <div class="event-meta">
+                        <p><i class="fas fa-calendar-alt"></i> April 5 <sup>th</sup>, 2025</p>
+                        <p><i class="fas fa-clock"></i> 9:00 AM - 12:00 PM</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Wells of Revival Church, Thika</p>
+                    </div>
+                    <p class="event-description">Join us for our powerful worship, anointed preaching, and life-changing encounters with God. Speakers include [Speaker Names]. Don't miss this opportunity to experience a fresh outpouring of the Holy Spirit!</p>
+                    <div class="event-actions">
+                        <a href="#" class="event-register-btn">Register Now</a>
+                        <a href="#" class="event-details-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="featured-event-countdown">
+                    <h3>Event Starts In:</h3>
+                    <div class="countdown-timer">
+                        <div class="countdown-item">
+                            <span id="countdown-days">00</span>
+                            <span>Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="countdown-hours">00</span>
+                            <span>Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="countdown-minutes">00</span>
+                            <span>Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="countdown-seconds">00</span>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Filter Section -->
+    <section class="events-filter">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="event-category">Category:</label>
+                    <select id="event-category">
+                        <option value="all">All Categories</option>
+                        <option value="worship">Worship</option>
+                        <option value="prayer">Prayer</option>
+                        <option value="youth">Youth</option>
+                        <option value="family">Family</option>
+                        <option value="outreach">Outreach</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="event-month">Month:</label>
+                    <select id="event-month">
+                        <option value="all">All Months</option>
+                        <option value="june">June 2025</option>
+                        <option value="[Month]y">[Month]y 2025</option>
+                        <option value="[Month]ust">[Month]ust 2025</option>
+                        <option value="september">September 2025</option>
+                    </select>
+                </div>
+                
+                <button id="filter-button" class="filter-btn">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Grid Section -->
+    <section class="events-grid fade-on-scroll">
+        <div class="container">
+            <div class="events-container">
+                <!-- Event Card 1 -->
+                <div class="event-card" data-category="worship" data-month="june">
+                    <div class="event-date">
+                        <span class="event-day">[Date]</span>
+                        <span class="event-month">[Month]</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>[Title]</h3>
+                        <p class="event-meta">
+                            <span><i class="fas fa-clock"></i>[Time]</span>
+                            <span><i class="fas fa-map-marker-alt"></i> [Venue]</span>
+                        </p>
+                        <p class="event-excerpt">[Message]</p>
+                        <a href="#" class="event-more">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Event Card 2 -->
+                <div class="event-card" data-category="prayer" data-month="june">
+                    <div class="event-date">
+                        <span class="event-day">[Date]</span>
+                        <span class="event-month">[Month]</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>[Title]</h3>
+                        <p class="event-meta">
+                            <span><i class="fas fa-clock"></i>[Time]</span>
+                            <span><i class="fas fa-map-marker-alt"></i>[Venue]</span>
+                        </p>
+                        <p class="event-excerpt">[Message]</p>
+                        <a href="#" class="event-more">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Event Card 3 -->
+                <div class="event-card" data-category="youth" data-month="[Month]y">
+                    <div class="event-date">
+                        <span class="event-day">[Date]</span>
+                        <span class="event-month">[Month]</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>[Title]</h3>
+                        <p class="event-meta">
+                            <span><i class="fas fa-clock"></i> [Time]</span>
+                            <span><i class="fas fa-map-marker-alt"></i> [Venue]</span>
+                        </p>
+                        <p class="event-excerpt">[Message]</p>
+                        <a href="#" class="event-more">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Event Card 4 -->
+                <div class="event-card" data-category="family" data-month="[Month]y">
+                    <div class="event-date">
+                        <span class="event-day">[Date]</span>
+                        <span class="event-month">[Month]</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Family Fun Day</h3>
+                        <p class="event-meta">
+                            <span><i class="fas fa-clock"></i> [Time]</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Church Grounds</span>
+                        </p>
+                        <p class="event-excerpt">[Message]</p>
+                        <a href="#" class="event-more">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Event Card 5 -->
+                <div class="event-card" data-category="outreach" data-month="[Month]ust">
+                    <div class="event-date">
+                        <span class="event-day">[Date]</span>
+                        <span class="event-month">[Month]</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>[Title]</h3>
+                        <p class="event-meta">
+                            <span><i class="fas fa-clock"></i>[Time]</span>
+                            <span><i class="fas fa-map-marker-alt"></i> [Venue]</span>
+                        </p>
+                        <p class="event-excerpt">[Message]</p>
+                        <a href="#" class="event-more">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Event Card 6 -->
+                <div class="event-card" data-category="worship" data-month="[Month]ust">
+                    <div class="event-date">
+                        <span class="event-day">[Date]</span>
+                        <span class="event-month">[Month]</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>[Title]</h3>
+                        <p class="event-meta">
+                            <span><i class="fas fa-clock"></i> [Time]</span>
+                            <span><i class="fas fa-map-marker-alt"></i>[Venue]</span>
+                        </p>
+                        <p class="event-excerpt">[Message]</p>
+                        <a href="#" class="event-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="pagination-btn active">1</a>
+                <a href="#" class="pagination-btn">2</a>
+                <a href="#" class="pagination-btn next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Link Section -->
+    <section class="calendar-link fade-on-scroll">
+        <div class="container">
+            <div class="calendar-link-content">
+                <div class="calendar-text">
+                    <h2>View Our Full Calendar</h2>
+                    <p>Stay up-to-date with all church activities, services, and events by checking our comprehensive calendar.</p>
+                    <a href="calendar.html" class="calendar-btn">Go to Calendar</a>
+                </div>
+                <div class="calendar-image">
+                    <img src="images/calendar-preview.jpg" alt="Calendar Preview">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <h3>Wells of Revival</h3>
+                <p>Transforming Lives Through Christ</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="sermons.html">Sermons</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+                <a href="giving.html">Give</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Majengo, Thika, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 XXX XXX XXX</p>
+                <p><i class="fas fa-envelope"></i> example@wellsofrevival.org</p>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wells of Revival. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/ministry.js"></script>
+</body>
+</html>
