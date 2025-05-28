@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo.jpeg">
-
 </head>
 <body>
     <!-- Quick Announcements Bar -->
@@ -25,16 +24,15 @@
         <div class="logo">
             <a href="index.html">
                 <img src="images/logo.jpeg" alt="Wells of Revival Logo">
-                <span>Wells of Revival</span>
+                <span>The Wells of Revival</span>
             </a>
         </div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="sermons.html">Sermons</a>
-            <a href="calendar.html">Calendar</a>
             <a href="events.html">Events</a>
-            <a href="announcements.html">RE Ministry</a>
+            <a href="announcements.html">Ministries</a>
             <a href="contact.html" class="active">Contact</a>
             <a href="giving.html" class="donate-btn">Give</a>
         </div>
@@ -43,27 +41,7 @@
         </div>
     </nav>
 
-    <!-- Contact Hero Section with Video Background
-    <section class="ministry-hero contact-hero">
-        <div class="image-background">
-            <div class="image-foreground">
-                <div class="image-grid">
-                    <div class="hero-image" style="background-image: url('images/worship1.jpg');"></div>
-                    <div class="hero-image" style="background-image: url('images/worship2.jpg');"></div>
-                    <div class="hero-image" style="background-image: url('images/welcome.jpg');"></div>
-                    <div class="hero-image" style="background-image: url('images/prayer.jpg');"></div>
-                    <div class="hero-image" style="background-image: url('images/community.jpg');"></div>
-                    <div class="hero-image" style="background-image: url('images/service.jpg');"></div>
-                    <div class="hero-image" style="background-image: url('images/worship3.jpg');"></div>
-                </div>
-            </div>
-        </div>
-        <div class="ministry-hero-content container contact-hero-content">
-            <h1 class="fade-in">Connect With Us</h1>
-            <p class="subtitle fade-in">We'd love to hear from you</p>
-        </div>
-    </section> -->
-
+    <!-- Contact Hero Section -->
     <section class="ministry-hero">
         <div class="image-background">
             <img src="images/wells.jpg" alt="Church" class="hero-full-image">
@@ -75,56 +53,69 @@
         </div>
     </section>
 
-    <!-- Contact Information Section -->
-    <section class="contact-info fade-on-scroll">
-        <div class="container">
-            <div class="info-cards">
-                <div class="info-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Visit Us</h3>
-                    <p>Wells of Revival Church</p>
-                    <p>Majengo, Thika, Kenya</p>
-                </div>
-                
-                <div class="info-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Call Us</h3>
-                    <p>+254 XXX XXX XXX</p>
-                    <p>+254 XXX XXX XXX</p>
-                </div>
-                
-                <div class="info-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email Us</h3>
-                    <p>example@wellsofrevival.org</p>
-                    <p>example@wellsofrevival.org</p>
-                </div>
-                
-                <div class="info-card">
-                    <i class="fas fa-clock"></i>
-                    <h3>Service Times</h3>
-                    <p>Sunday: 8:00 AM - 12:00 PM</p>
-                    <p>Wednesday: 6:00 PM - 7:30 PM</p>
-                    <p>Wednesday: 9:00 PM - 9:30 PM</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Form Section -->
-    <section class="contact-form fade-on-scroll">
-        <div class="container">
-            <h2>Send Us a Message</h2>
-            <div class="form-container">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
+    <section class="contact-form-section">
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>We're here to help and answer any questions you might have. We look forward to hearing from you.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-item-content">
+                            <h4>Visit Us</h4>
+                            <p>Wells of Revival Church<br>Majengo, Thika, Kenya</p>
+                        </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-item-content">
+                            <h4>Call Us</h4>
+                            <p>+254 XXX XXX XXX<br>+254 XXX XXX XXX</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-item-content">
+                            <h4>Email Us</h4>
+                            <p>example@wellsofrevival.org<br>example@wellsofrevival.org</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-item-content">
+                            <h4>Service Times</h4>
+                            <p>Sunday: 8:00 AM - 12:00 PM<br>Wednesday: 6:00 PM - 7:30 PM<br>Wednesday: 9:00 PM - 9:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
                     </div>
                     
                     <div class="form-group">
@@ -143,43 +134,99 @@
                         </select>
                     </div>
                     
-                    <div class="form-group full-width">
+                    <div class="form-group">
                         <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <textarea id="message" name="message" required></textarea>
                     </div>
                     
-                    <div class="form-group full-width">
-                        <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours Section -->
+    <section class="office-hours">
+        <div class="office-hours-content">
+            <h2>Office Hours & Service Times</h2>
+            <div class="hours-grid">
+                <div class="hours-card">
+                    <i class="fas fa-church"></i>
+                    <h3>Sunday Services</h3>
+                    <ul class="hours-list">
+                        <li><span class="day">Morning Service</span><span class="time">8:00 AM - 12:00 PM</span></li>
+                        <li><span class="day">Sunday School</span><span class="time">9:00 AM - 10:00 AM</span></li>
+                    </ul>
+                </div>
+                
+                <div class="hours-card">
+                    <i class="fas fa-pray"></i>
+                    <h3>Weekday Services</h3>
+                    <ul class="hours-list">
+                        <li><span class="day">Wednesday Prayer</span><span class="time">6:00 PM - 7:30 PM</span></li>
+                        <li><span class="day">Wednesday Bible Study</span><span class="time">9:00 PM - 9:30 PM</span></li>
+                    </ul>
+                </div>
+                
+                <div class="hours-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Office Hours</h3>
+                    <ul class="hours-list">
+                        <li><span class="day">Monday - Friday</span><span class="time">9:00 AM - 5:00 PM</span></li>
+                        <li><span class="day">Saturday</span><span class="time">10:00 AM - 2:00 PM</span></li>
+                        <li><span class="day">Sunday</span><span class="time">Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Request Section -->
+    <section class="prayer-request">
+        <div class="prayer-content">
+            <h2>Need Prayer?</h2>
+            <p>Our prayer team is committed to praying for your needs. Submit your prayer request, and we will stand with you in faith.</p>
+            <p>All prayer requests are kept confidential and are shared only with our dedicated prayer team.</p>
+            
+            <div class="prayer-form">
+                <h3>Submit Your Prayer Request</h3>
+                <div class="privacy-notice">
+                    <p><i class="fas fa-lock"></i> Your prayer request will be kept strictly confidential and shared only with our prayer team.</p>
+                </div>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="prayer-name">Your Name (Optional)</label>
+                        <input type="text" id="prayer-name" name="prayer-name">
                     </div>
+                    
+                    <div class="form-group">
+                        <label for="prayer-email">Your Email (Optional)</label>
+                        <input type="email" id="prayer-email" name="prayer-email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="prayer-request">Prayer Request</label>
+                        <textarea id="prayer-request" name="prayer-request" required></textarea>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="prayer-updates" name="prayer-updates">
+                        <label for="prayer-updates">I would like to receive prayer updates and encouragement</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Prayer Request</button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Map Section -->
-    <section class="map-section fade-on-scroll">
+    <section class="map-section">
         <div class="container">
             <h2>Find Us</h2>
             <div class="map-container">
-                <!-- Replace with actual Google Maps embed code -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.499096747871!2d37.08165767404412!3d-1.0362134354020058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4e62b53da841%3A0xbed071bf1770a28c!2sWells%20of%20Revival%20Ministries!5e1!3m2!1sen!2ske!4v1748000445027!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Prayer Request Section -->
-    <section class="prayer-request fade-on-scroll">
-        <div class="container">
-            <div class="prayer-content">
-                <div class="prayer-text">
-                    <h2>Need Prayer?</h2>
-                    <p>Our prayer team is committed to praying for your needs. Submit your prayer request, and we will stand with you in faith.</p>
-                    <p>All prayer requests are kept confidential and are shared only with our dedicated prayer team.</p>
-                    <a href="#" class="prayer-btn">Submit Prayer Request</a>
-                </div>
-                <div class="prayer-image">
-                    <img src="images/prayer.jpg" alt="Prayer Team">
-                </div>
             </div>
         </div>
     </section>
@@ -221,7 +268,6 @@
             <p>&copy; 2025 Wells of Revival. All Rights Reserved.</p>
         </div>
     </footer>
-
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/contact.js"></script>

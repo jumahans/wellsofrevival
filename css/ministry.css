@@ -1,3 +1,8 @@
+body{
+    overflow-x: hidden;
+    
+}
+
 .ministry-hero {
     position: relative;
     height: 600px;
@@ -885,6 +890,55 @@
 
 
 
+.about-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(52, 73, 94, 0.7)), url('../images/raising.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.about-hero-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+.about-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards 0.5s;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+}
 
 
 

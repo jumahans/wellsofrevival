@@ -79,10 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const announcementBar = document.querySelector('.announcement-bar');
     if (announcementBar) {
         const announcements = [
-            "Join us this Sunday for a special service at 9:00 AM",
-            "Bible study every Friday at 5:30 PM",
-            "Prayer meeting on Wednesday at 6:00 PM",
-            "Youth service this Saturday at 3:00 PM"
+            "Join us this Sunday from  8:00 AM to 12 Noon",
+            "Fellowship meeting from 6:00 PM to 9:30 PM",
         ];
         
         let currentIndex = 0;
