@@ -123,13 +123,18 @@ body{
     gap: 2rem;
     margin-top: 3rem;
 }
+.ministry-feature h3{
+    color: whitesmoke;
+}
 
 .ministry-feature {
     text-align: center;
     padding: 1.5rem;
-    background-color: #f9f9f9;
+    background-color: #2C3E50;
+    color: white;
     border-radius: 8px;
     transition: all 0.3s ease;
+    box-shadow: 0 5px 15px grey;
 }
 
 .ministry-feature:hover {

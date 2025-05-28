@@ -155,7 +155,7 @@ body {
     overflow: hidden;
 }
 
-.sermon-thumbnail img {
+.sermon-thumbnail iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -306,10 +306,10 @@ body {
     text-align: center;
 }
 
-.featured-content {
+/* .featured-content {
     max-width: 800px;
     margin: 0 auto;
-}
+} */
 
 .featured-sermon h2 {
     color: white;
@@ -317,7 +317,7 @@ body {
     font-size: 2.5rem;
 }
 
-.featured-sermon-card {
+.featured-sermon-container {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 3rem;
@@ -325,34 +325,38 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.featured-sermon-title {
+.featured-sermon-container iframe{
+    height: 60vh;
+}
+
+.featured-details h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: white;
 }
 
-.featured-sermon-speaker {
+.sermon-meta {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: var(--accent-color);
     font-weight: 600;
 }
 
-.featured-sermon-excerpt {
+.sermon-description {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 2rem;
     opacity: 0.9;
 }
 
-.featured-actions {
+.sermon-actions {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
 }
 
-.featured-btn {
+.sermon-actions a {
     padding: 1rem 2rem;
     border-radius: 50px;
     font-weight: 600;
@@ -361,6 +365,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    color: whitesmoke;
 }
 
 .featured-btn.primary {
@@ -437,4 +442,119 @@ body {
     .featured-sermon {
         padding: 3rem 1rem;
     }
+}
+
+
+/* Sermon Series Section */
+.sermon-series {
+    background-color: white;
+    padding: 5rem 2rem;
+}
+
+.sermon-series h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.sermon-series h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.series-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.series-card {
+    position: relative;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.series-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.series-card:hover img {
+    transform: scale(1.1);
+}
+
+.series-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 2rem;
+    transform: translateY(70%);
+    transition: var(--transition);
+}
+
+.series-card:hover .series-info {
+    transform: translateY(0);
+}
+
+.series-info h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.series-info p {
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.2s;
+}
+
+.series-card:hover .series-info p {
+    opacity: 1;
+}
+
+.series-btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    border-radius: 50px;
+    font-weight: bold;
+    transition: var(--transition);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease 0.3s, transform 0.3s ease 0.3s, background-color 0.3s ease;
+}
+
+.series-card:hover .series-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.series-btn:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* Fade on scroll animation */
+.fade-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
