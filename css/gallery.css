@@ -17,6 +17,7 @@
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    place-items: center;
     gap: 1.5rem;
 }
 
@@ -177,6 +178,7 @@
 @media screen and (max-width: 480px) {
     .gallery-grid {
         grid-template-columns: 1fr;
+        
     }
     
     .gallery-item {

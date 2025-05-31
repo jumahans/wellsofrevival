@@ -153,7 +153,7 @@
 }
 
 /* Leadership Extended Section */
-.leadership-extended {
+/* .leadership-extended {
     background: linear-gradient(135deg, var(--light-color), var(--gray-light));
     padding: 6rem 2rem;
 }
@@ -284,7 +284,7 @@
     color: var(--text-color);
     line-height: 1.6;
     margin-bottom: 1.5rem;
-}
+} */
 
 /* Beliefs Section */
 .beliefs {
