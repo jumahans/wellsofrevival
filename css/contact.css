@@ -176,77 +176,6 @@
     font-weight: 500;
 }
 
-/* Prayer Request Section */
-.prayer-request {
-    background: var(--white);
-    padding: 6rem 2rem;
-    text-align: center;
-}
-
-.prayer-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.prayer-request h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: var(--primary-color);
-}
-
-.prayer-request p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 3rem;
-    color: var(--text-color);
-}
-
-.prayer-form {
-    background: var(--light-color);
-    padding: 3rem;
-    border-radius: 15px;
-    box-shadow: var(--shadow-light);
-    text-align: left;
-}
-
-.prayer-form h3 {
-    color: var(--secondary-color);
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.privacy-notice {
-    background: rgba(230, 126, 34, 0.1);
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-    border-left: 4px solid var(--accent-color);
-}
-
-.privacy-notice p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: var(--text-color);
-}
-
-.checkbox-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.checkbox-group input[type="checkbox"] {
-    width: auto;
-    margin-right: 1rem;
-    transform: scale(1.2);
-}
-
-.checkbox-group label {
-    margin: 0;
-    font-size: 1rem;
-    color: var(--text-color);
-}
-
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
@@ -284,9 +213,7 @@
         align-items: center;
     }
     
-    .prayer-form {
-        padding: 2rem;
-    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -295,9 +222,7 @@
     }
     
 
-    .prayer-form {
-        padding: 1.5rem;
-    }
+
     
     .hours-card {
         padding: 2rem 1.5rem;

@@ -658,7 +658,7 @@ body{
 
 @media (max-width: 576px) {
     .ministry-hero {
-        height: 500px;
+        height: auto;
     }
     
     .ministry-hero-content h1 {
@@ -709,6 +709,7 @@ body{
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
+        height: 100%;
     }
 }
 
