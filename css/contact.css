@@ -98,88 +98,6 @@
     box-shadow: var(--shadow-medium);
 }
 
-.contact-form {
-    background: var(--white);
-    padding: 3rem;
-    border-radius: 15px;
-    box-shadow: var(--shadow-medium);
-}
-
-.contact-form h2 {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    color: var(--primary-color);
-    text-align: center;
-}
-
-.form-group {
-    margin-bottom: 2rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.8rem;
-    color: var(--secondary-color);
-    font-weight: 600;
-    font-size: 1rem;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 1.2rem;
-    border: 2px solid var(--gray-light);
-    border-radius: 10px;
-    font-family: 'Inter', 'Roboto', sans-serif;
-    font-size: 1rem;
-    color: var(--text-color);
-    transition: var(--transition);
-    background-color: var(--light-color);
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.1);
-    background-color: var(--white);
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 150px;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 1.2rem;
-    background: linear-gradient(135deg, var(--accent-color), #D35400);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-    margin-top: 1rem;
-}
-
-.submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-medium);
-}
-
-.submit-btn:active {
-    transform: translateY(0);
-}
 
 /* Office Hours Section */
 .office-hours {
@@ -366,8 +284,6 @@
         align-items: center;
     }
     
-    .contact-info,
-    .contact-form,
     .prayer-form {
         padding: 2rem;
     }
@@ -378,8 +294,7 @@
         font-size: 2rem;
     }
     
-    .contact-info,
-    .contact-form,
+
     .prayer-form {
         padding: 1.5rem;
     }
