@@ -212,43 +212,305 @@
 
 
 
-/* Responsive Design */
-@media screen and (max-width: 1024px) {
+/* Mobile-First Responsive Design for About Page */
+
+/* Base Mobile Styles (320px and up) */
+@media screen and (max-width: 480px) {
+    /* About Hero Section */
+    .about-hero {
+        height: 50vh;
+        min-height: 400px;
+        padding: 1rem;
+    }
+    
+    .about-hero-content {
+        padding: 1rem;
+        max-width: 100%;
+    }
+    
+    .about-hero h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+    
+    .about-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Mission Section */
+    .mission {
+        padding: 3rem 1rem;
+    }
+    
     .mission-content {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2rem;
     }
     
-    .pastor-detailed {
+    .mission-text {
+        padding: 1rem;
+    }
+    
+    .mission h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .mission p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+    
+    .mission-image {
+        margin-top: 2rem;
+    }
+    
+    .mission-image img {
+        height: 250px;
+    }
+    
+    /* Values Section */
+    .values {
+        padding: 3rem 1rem;
+    }
+    
+    .values h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .values-grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 1.5rem;
+        margin-top: 2rem;
     }
     
-    .timeline::after {
-        left: 20px;
+    .value-card {
+        padding: 2rem 1.5rem;
+        margin: 0 0.5rem;
     }
     
-    .timeline-item {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 0;
+    .value-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
     }
     
-    .timeline-item::after {
-        left: 10px;
+    .value-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
     }
     
-    .timeline-item:nth-child(even) {
-        left: 0%;
+    /* Beliefs Section */
+    .beliefs {
+        padding: 3rem 1rem;
     }
     
-    .timeline-item:nth-child(odd) .timeline-content,
-    .timeline-item:nth-child(even) .timeline-content {
-        margin: 0;
+    .beliefs h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .beliefs-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .belief-card {
+        padding: 2rem 1.5rem;
+        margin: 0 0.5rem;
+    }
+    
+    .belief-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .belief-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Beliefs Section - New Structure */
+    .beliefs-section {
+        padding: 3rem 1rem;
+    }
+    
+    .section-header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+    
+    .belief-category {
+        margin-bottom: 3rem;
+    }
+    
+    .category-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        color: var(--primary-color);
+    }
+    
+    .belief-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        border-left: 4px solid var(--accent-color);
+    }
+    
+    .belief-icon {
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--accent-color);
+        border-radius: 50%;
+        color: white;
+        font-size: 1.2rem;
+    }
+    
+    .belief-text h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--primary-color);
+    }
+    
+    .belief-text p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    
+    .belief-text cite {
+        font-size: 0.8rem;
+        opacity: 0.7;
+        font-style: italic;
+    }
+    
+    /* Authority Section */
+    .authority-content {
+        margin-top: 2rem;
+    }
+    
+    .authority-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+    }
+    
+    .authority-number {
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--accent-color);
+        border-radius: 50%;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    .authority-text p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    
+    .authority-text ul {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .authority-text li {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Autonomy Section */
+    .autonomy-content {
+        margin-top: 2rem;
+    }
+    
+    .autonomy-text {
+        padding: 2rem 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        border-left: 4px solid var(--accent-color);
+    }
+    
+    .autonomy-text p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+    
+    .autonomy-text cite {
+        font-size: 0.8rem;
+        opacity: 0.7;
+        font-style: italic;
     }
 }
 
-@media screen and (max-width: 768px) {
+/* Small Mobile Landscape (576px and up) */
+@media screen and (min-width: 481px) and (max-width: 576px) {
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .about-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .mission h2,
+    .values h2,
+    .beliefs h2,
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .value-card,
+    .belief-card {
+        padding: 2.5rem 2rem;
+    }
+    
+    .belief-item,
+    .authority-item {
+        padding: 2rem;
+    }
+}
+
+/* Large Mobile/Small Tablet (768px and up) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .about-hero {
+        height: 55vh;
+    }
+    
     .about-hero h1 {
         font-size: 2.5rem;
     }
@@ -257,57 +519,145 @@
         font-size: 1.2rem;
     }
     
-    .values-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    .mission {
+        padding: 4rem 2rem;
     }
     
-    .staff-grid {
+    .values,
+    .beliefs,
+    .beliefs-section {
+        padding: 4rem 2rem;
+    }
+    
+    .values-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
     
     .beliefs-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
     
-
-    
-    .timeline-item {
-        padding-left: 40px;
-    }
-    
-    .timeline::after {
-        left: 15px;
-    }
-    
-    .timeline-item::after {
-        left: 5px;
+    .mission h2,
+    .values h2,
+    .beliefs h2,
+    .section-title {
+        font-size: 2.2rem;
     }
 }
 
-@media screen and (max-width: 480px) {
+/* Tablet (1024px and up) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .about-hero {
+        height: 60vh;
+    }
+    
+    .mission-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .beliefs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .mission-text {
+        text-align: center;
+    }
+    
+    .mission-image {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/* Touch-friendly improvements for mobile */
+@media screen and (max-width: 768px) {
+    /* Ensure touch targets are at least 44px */
+    .value-card,
+    .belief-card,
+    .belief-item,
+    .authority-item {
+        min-height: 44px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Improve text readability on mobile */
+    .mission p,
+    .value-card p,
+    .belief-card p,
+    .belief-text p,
+    .authority-text p,
+    .autonomy-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    /* Add spacing for better mobile UX */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Optimize images for mobile */
+    .mission-image img {
+        border-radius: 10px;
+    }
+    
+    /* Mobile-specific animations */
+    .belief-item:hover,
+    .authority-item:hover,
+    .value-card:hover,
+    .belief-card:hover {
+        transform: none; /* Disable hover transforms on mobile */
+    }
+    
+    .belief-item:active,
+    .authority-item:active,
+    .value-card:active,
+    .belief-card:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .about-hero {
+        height: 70vh;
+        min-height: 300px;
+    }
+    
     .about-hero h1 {
         font-size: 2rem;
     }
     
-    .staff-grid {
-        grid-template-columns: 1fr;
+    .about-subtitle {
+        font-size: 1rem;
     }
     
-    .value-card {
-        padding: 2rem 1.5rem;
+    .mission,
+    .values,
+    .beliefs,
+    .beliefs-section {
+        padding: 2rem 1rem;
     }
-    
-    .belief-card {
-        padding: 2rem 1.5rem;
-    }
-    
-    .pastor-detailed-info {
-        padding: 1.5rem;
-    }
-    
-    .timeline-content {
-        padding: 1.5rem;
+}
+
+/* High DPI displays */
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+    .belief-text p,
+    .authority-text p,
+    .autonomy-text p {
+        font-size: 0.95rem;
+        line-height: 1.5;
     }
 }

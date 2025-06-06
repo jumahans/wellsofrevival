@@ -885,4 +885,218 @@ body {
 }
 
     
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .giving-principles {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .giving-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .giving-hero .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .scripture {
+        padding: 1rem;
+    }
+    
+    .scripture p {
+        font-size: 1rem;
+    }
+    
+    .why-give,
+    .ways-to-give,
+    .giving-categories {
+        padding: 3rem 1rem;
+    }
+    
+    .giving-principles {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .principle-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .giving-method {
+        flex-direction: column;
+    }
+    
+    .method-icon {
+        min-width: auto;
+        padding: 2rem;
+    }
+    
+    .method-details {
+        padding: 2rem;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .why-give h2,
+    .ways-to-give h2,
+    .giving-categories h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .giving-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .giving-hero .subtitle {
+        font-size: 1rem;
+    }
+    
+    .giving-hero-content {
+        padding: 1rem;
+    }
+    
+    .why-give,
+    .ways-to-give,
+    .giving-categories {
+        padding: 2rem 1rem;
+    }
+    
+    .principle-card,
+    .category-card {
+        padding: 1.5rem;
+    }
+    
+    .method-details {
+        padding: 1.5rem;
+    }
+    
+    .method-instructions {
+        padding: 1.2rem;
+    }
+    
+    .why-give h2,
+    .ways-to-give h2,
+    .giving-categories h2 {
+        font-size: 1.8rem;
+    }
+    
+    .principle-card i {
+        font-size: 2.5rem;
+    }
+    
+    .method-icon i {
+        font-size: 2.2rem;
+    }
+    
+    .category-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .category-icon i {
+        font-size: 1.8rem;
+    }
+    
+    .method-instructions p {
+        font-size: 0.9rem;
+    }
+    
+    .highlight {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 360px) {
+    .giving-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .why-give h2,
+    .ways-to-give h2,
+    .giving-categories h2 {
+        font-size: 1.6rem;
+    }
+    
+    .principle-card,
+    .category-card {
+        padding: 1.2rem;
+    }
+    
+    .method-details {
+        padding: 1.2rem;
+    }
+    
+    .method-instructions {
+        padding: 1rem;
+    }
+    
+    .category-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .category-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .principle-card i {
+        font-size: 2rem;
+    }
+    
+    .method-icon i {
+        font-size: 2rem;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .giving-principles {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .giving-method {
+        flex-direction: row;
+    }
+    
+    .method-icon {
+        min-width: 100px;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1400px) {
+    .giving-principles {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1400px;
+    }
+    
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1400px;
+    }
+    
+    .giving-methods {
+        max-width: 1200px;
+    }
+}
 
