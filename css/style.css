@@ -1043,3 +1043,14 @@ footer {
     background-clip: text;
 }
 
+.list-align {
+    list-style: none; /* Removes bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.list-align li {
+    text-decoration: none;     /* Ensures no underline */
+    text-align: justify;       /* Aligns text evenly across the width */
+    margin-bottom: 10px;       /* Adds space between items (optional) */
+}
