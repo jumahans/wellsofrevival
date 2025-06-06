@@ -7,226 +7,334 @@
     <meta name="description" content="Watch or listen to past sermons and teachings from Wells of Revival Church. Be spiritually enriched anytime.">
     <meta name="keywords" content="Wells of Revival sermons, Christian sermons, Thika church sermons, worship messages">
     <meta name="author" content="Wells of Revival Church">
+    
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Wells of Revival | Sermons">
-    <meta property="og:description" content="Access our latest sermons online and stay connected with God’s word through Wells of Revival Church.">
+    <meta property="og:description" content="Access our latest sermons online and stay connected with God's word through Wells of Revival Church.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jumahans.github.io/wellsofrevival/sermons.html">
     <meta property="og:image" content="https://jumahans.github.io/wellsofrevival/images/sermons.jpg">
-
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wells of Revival | Sermons">
+    <meta name="twitter:description" content="Access our latest sermons online and stay connected with God's word through Wells of Revival Church.">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="images/logo.jpeg" as="image">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sermon.css">
     <link rel="stylesheet" href="css/ministry.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- Fonts with display=swap for better performance -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/logo.jpeg">
-
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+    <link rel="apple-touch-icon" href="images/logo.jpeg">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Church",
+        "name": "Wells of Revival",
+        "description": "Watch or listen to past sermons and teachings from Wells of Revival Church",
+        "url": "https://jumahans.github.io/wellsofrevival/sermons.html",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Majengo",
+            "addressLocality": "Thika",
+            "addressCountry": "Kenya"
+        },
+        "telephone": "+254-727-502-355",
+        "email": "thewellsofrevival.ke@gmail.com"
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
+    
     <!-- Quick Announcements Bar -->
-    <div class="announcement-bar">
+    <div class="announcement-bar" role="banner" aria-label="Church announcement">
         <div class="announcement-content">
             <p>Join us this Sunday for a special service at 9:00 AM</p>
         </div>
     </div>
-
+    
     <!-- Navigation -->
-    <nav class="main-nav">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+            <a href="index.html" aria-label="Wells of Revival Home">
+                <img src="images/logo.jpeg" alt="Wells of Revival Church Logo" width="50" height="50">
                 <span>The Wells of Revival</span>
             </a>
         </div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="sermons.html" class="active">Sermons</a>
+            <a href="sermons.html" class="active" aria-current="page">Sermons</a>
             <a href="events.html">Events</a>
             <a href="announcements.html">Ministries</a>
             <a href="contact.html">Contact</a>
             <a href="giving.html" class="donate-btn">Give</a>
         </div>
-        <div class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>            
-    <section class="ministry-hero">
-        <div class="image-background">
-            <img src="images/sermons.jpg" alt="Church" class="hero-full-image">
-            <div class="image-foreground"></div>
-        </div>
-        <div class="ministry-hero-content container about-hero-content">
-            <h1 class="fade-in" style="color: white !important;">Sermons & Teachings</h1>
-            <p class="subtitle fade-in">Grow in faith through the Word of God</p>
-        </div>
-    </section>
-
-
-
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+    </nav>
     
-
-    <!-- Sermons Filter Section -->
-    <section class="sermons-filter">
-        <div class="container">
-            <div class="filter-options">
-                <div class="filter-group">
-                    <label for="speaker-filter">Speaker:</label>
-                    <select id="speaker-filter">
-                        <option value="all">All Speakers</option>
-                        <option value="bishop-ayisi">Bishop Ayisi</option>
-                        <option value="guest-speaker">Guest Speakers</option>
-                    </select>
-                </div>
-                
-                <div class="filter-group">
-                    <label for="topic-filter">Topic:</label>
-                    <select id="topic-filter">
-                        <option value="all">All Topics</option>
-                        <option value="faith">Faith</option>
-                        <option value="prayer">Prayer</option>
-                        <option value="holy-spirit">Holy Spirit</option>
-                        <option value="family">Family</option>
-                        <option value="healing">Healing</option>
-                    </select>
-                </div>
-                
-                <div class="filter-group">
-                    <label for="series-filter">Series:</label>
-                    <select id="series-filter">
-                        <option value="all">All Series</option>
-                        <option value="revival">Path to Revival</option>
-                        <option value="purpose">Discovering Your Purpose</option>
-                        <option value="faith">Faith That Moves Mountains</option>
-                    </select>
-                </div>
-                
-                <button id="filter-button" class="filter-btn">Apply Filters</button>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="ministry-hero" role="banner">
+            <div class="image-background">
+                <img src="images/sermons.jpg" alt="Church congregation during worship service" class="hero-full-image" loading="eager">
+                <div class="image-foreground" aria-hidden="true"></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Featured Sermon -->
-    <section class="featured-sermon fade-on-scroll">
-        <div class="container">
-            <h2>Featured Message</h2>
-            <div class="featured-sermon-container">
-                <div class="featured-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/od-5iVUk994?si=BXYk8gu4niPRzDz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="featured-details">
-                    <h3>There Is Hope</h3>
-                    <p class="sermon-meta">
-                        <span><i class="fas fa-user"></i>Bishop John Ayisi.</span>
-                    </p>
+            <div class="ministry-hero-content container about-hero-content">
+                <h1 class="fade-in" style="color: white !important;">Sermons & Teachings</h1>
+                <p class="subtitle fade-in">Grow in faith through the Word of God</p>
+            </div>
+        </section>
+        
+        <!-- Sermons Filter Section -->
+        <section class="sermons-filter" aria-label="Filter sermons">
+            <div class="container">
+                <h2 class="visually-hidden">Filter Sermons</h2>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label for="speaker-filter">Speaker:</label>
+                        <select id="speaker-filter" aria-describedby="speaker-help">
+                            <option value="all">All Speakers</option>
+                            <option value="bishop-ayisi">Bishop Ayisi</option>
+                            <option value="guest-speaker">Guest Speakers</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="topic-filter">Topic:</label>
+                        <select id="topic-filter" aria-describedby="topic-help">
+                            <option value="all">All Topics</option>
+                            <option value="faith">Faith</option>
+                            <option value="prayer">Prayer</option>
+                            <option value="holy-spirit">Holy Spirit</option>
+                            <option value="family">Family</option>
+                            <option value="healing">Healing</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="series-filter">Series:</label>
+                        <select id="series-filter" aria-describedby="series-help">
+                            <option value="all">All Series</option>
+                            <option value="revival">Path to Revival</option>
+                            <option value="purpose">Discovering Your Purpose</option>
+                            <option value="faith">Faith That Moves Mountains</option>
+                        </select>
+                    </div>
+                    
+                    <button id="filter-button" class="filter-btn" type="button">Apply Filters</button>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Sermon Grid -->
-    <section class="sermon-grid fade-on-scroll">
-        <div class="container">
-            <h2>Recent Sermons</h2>
-            <div class="sermons-container">
-                <!-- Sermon Card 1 -->
-                <div class="sermon-card" data-speaker="bishop-ayisi" data-topic="faith" data-series="revival">
-                    <div class="sermon-thumbnail">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PCKcofkScOs?si=ayfM_oXC2iPUbV1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div>
+        </section>
+        
+        <!-- Featured Sermon -->
+        <section class="featured-sermon fade-on-scroll" aria-labelledby="featured-heading">
+            <div class="container">
+                <h2 id="featured-heading">Featured Message</h2>
+                <div class="featured-sermon-container">
+                    <div class="featured-video">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/od-5iVUk994?si=BXYk8gu4niPRzDz0" 
+                            title="There Is Hope - Bishop John Ayisi sermon video"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
                     </div>
-                    <div class="sermon-info">
-                        <h3>JUST BELEIVE.</h3>
+                    <div class="featured-details">
+                        <h3>There Is Hope</h3>
                         <p class="sermon-meta">
-                            <span><i class="fas fa-user"></i> Bishop Ayisi</span>
+                            <span><i class="fas fa-user" aria-hidden="true"></i>Bishop John Ayisi</span>
                         </p>
-                        <p class="sermon-excerpt">Faith moves mountains—just believe, and watch God do the impossible.</p>
                     </div>
                 </div>
-                
-                <!-- Sermon Card 2 -->
-                <div class="sermon-card" data-speaker="guest-speaker" data-topic="prayer" data-series="purpose">
-                    <div class="sermon-thumbnail">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uuNFagALYJI?si=RGbEIBlxWjHU76YZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
+            </div>
+        </section>
+        
+        <!-- Sermon Grid -->
+        <section class="sermon-grid fade-on-scroll" aria-labelledby="recent-sermons-heading">
+            <div class="container">
+                <h2 id="recent-sermons-heading">Recent Sermons</h2>
+                <div class="sermons-container">
+                    <!-- Sermon Card 1 -->
+                    <article class="sermon-card" data-speaker="bishop-ayisi" data-topic="faith" data-series="revival">
+                        <div class="sermon-thumbnail">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/PCKcofkScOs?si=ayfM_oXC2iPUbV1U" 
+                                title="Just Believe - Bishop Ayisi sermon video"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen
+                                loading="lazy">
+                            </iframe>
+                            <div class="play-button" aria-hidden="true">
+                                <i class="fas fa-play"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="sermon-info">
-                        <h3>THE LOVE OF GOD.</h3>
-                        <p class="sermon-meta">
-                            <span><i class="fas fa-user"></i>Bishop John Ayisi</span>
-                        </p>
-                        <p class="sermon-excerpt">God’s love never fails, never leaves, and never gives up on you—it's forever.</p>
-                    </div>
-                </div>
-
-                <div class="sermon-card" data-speaker="bishop-ayisi" data-topic="holy-spirit" data-series="revival">
-                    <div class="sermon-thumbnail">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hWDrVvnI5T4?si=uhc4an6AcdRV3UHW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
+                        <div class="sermon-info">
+                            <h3>JUST BELIEVE</h3>
+                            <p class="sermon-meta">
+                                <span><i class="fas fa-user" aria-hidden="true"></i> Bishop Ayisi</span>
+                            </p>
+                            <p class="sermon-excerpt">Faith moves mountains—just believe, and watch God do the impossible.</p>
                         </div>
-                    </div>
-                    <div class="sermon-info">
-                        <h3>KUFIKA KWENYE UWEPO.</h3>
-                        <p class="sermon-meta">
-                            <span><i class="fas fa-user"></i> [Speaker]</span>
-                        </p>
-                        <p class="sermon-excerpt">Peace, power, and purpose await in God’s presence—draw near and be transformed.</p>
-                    </div>
-                </div>
-                
-                <!-- Sermon Card 4 -->
-                <div class="sermon-card" data-speaker="bishop-ayisi" data-topic="family" data-series="purpose">
-                    <div class="sermon-thumbnail">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/h9p39UTR6FE?si=eKm8ImS_-3XebZhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
+                    </article>
+                    
+                    <!-- Sermon Card 2 -->
+                    <article class="sermon-card" data-speaker="guest-speaker" data-topic="prayer" data-series="purpose">
+                        <div class="sermon-thumbnail">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/uuNFagALYJI?si=RGbEIBlxWjHU76YZ" 
+                                title="The Love of God - Bishop John Ayisi sermon video"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen
+                                loading="lazy">
+                            </iframe>
+                            <div class="play-button" aria-hidden="true">
+                                <i class="fas fa-play"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="sermon-info">
-                        <h3>TURNING TO GOD IN TIME OF TROUBLE.</h3>
-                        <p class="sermon-meta">
-                            <span><i class="fas fa-user"></i>[Speaker]</span>
-                        </p>
-                        <p class="sermon-excerpt">When storms rise, don’t run away—run to God. He’s your refuge and strength.</p>
-                    </div>
+                        <div class="sermon-info">
+                            <h3>THE LOVE OF GOD</h3>
+                            <p class="sermon-meta">
+                                <span><i class="fas fa-user" aria-hidden="true"></i>Bishop John Ayisi</span>
+                            </p>
+                            <p class="sermon-excerpt">God's love never fails, never leaves, and never gives up on you—it's forever.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Sermon Card 3 -->
+                    <article class="sermon-card" data-speaker="bishop-ayisi" data-topic="holy-spirit" data-series="revival">
+                        <div class="sermon-thumbnail">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/hWDrVvnI5T4?si=uhc4an6AcdRV3UHW" 
+                                title="Kufika Kwenye Uwepo sermon video"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen
+                                loading="lazy">
+                            </iframe>
+                            <div class="play-button" aria-hidden="true">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="sermon-info">
+                            <h3>KUFIKA KWENYE UWEPO</h3>
+                            <p class="sermon-meta">
+                                <span><i class="fas fa-user" aria-hidden="true"></i> Bishop Ayisi</span>
+                            </p>
+                            <p class="sermon-excerpt">Peace, power, and purpose await in God's presence—draw near and be transformed.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Sermon Card 4 -->
+                    <article class="sermon-card" data-speaker="bishop-ayisi" data-topic="family" data-series="purpose">
+                        <div class="sermon-thumbnail">
+                            <iframe 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/h9p39UTR6FE?si=eKm8ImS_-3XebZhE" 
+                                title="Turning to God in Time of Trouble sermon video"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen
+                                loading="lazy">
+                            </iframe>
+                            <div class="play-button" aria-hidden="true">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="sermon-info
+                        <div class="sermon-info">
+                            <h3>TURNING TO GOD IN TIME OF TROUBLE</h3>
+                            <p class="sermon-meta">
+                                <span><i class="fas fa-user" aria-hidden="true"></i>Bishop Ayisi</span>
+                            </p>
+                            <p class="sermon-excerpt">When storms rise, don't run away—run to God. He's your refuge and strength.</p>
+                        </div>
+                    </article>
                 </div>
-                
-
-        </div>
-    </section>
-
+            </div>
+        </section>
+    </main>
+    
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <img src="images/logo.jpeg" alt="Wells of Revival Church Logo" width="80" height="80" loading="lazy">
                 <h3>Wells of Revival</h3>
-                <p> Raising eagles in the Kingdom, Men and Women of character and integrity .</p>
+                <p>Raising eagles in the Kingdom, Men and Women of character and integrity.</p>
             </div>
             <div class="footer-contact">
                 <h4>Contact Us</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Majengo, Thika, Kenya</p>
-                <p><i class="fas fa-phone"></i> +254-727-502-355</p>
-                <p><i class="fas fa-envelope"></i>thewellsofrevival.ke@gmail.com</p>
+                <address>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Majengo, Thika, Kenya</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+254727502355" style="color: white !important;">+254-727-502-355</a></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:thewellsofrevival.ke@gmail.com" style="color: white;">thewellsofrevival.ke@gmail.com</a></p>
+                </address>
             </div>
             <div class="footer-services">
+                <h4>Service Times</h4>
                 <ul>
                     <li>First service: 8:00 AM - 9:30 AM</li>
-                    <li>Second Service: 10:00 AM - 11:30 PM</li>
-                    <li>Descipleship/Mentorship Classes <br> 11:45AM - 12:30 PM </li>
+                    <li>Second Service: 10:00 AM - 11:30 AM</li>
+                    <li>Discipleship/Mentorship Classes<br>11:45 AM - 12:30 PM</li>
                 </ul>
             </div>
             <div class="footer-social">
                 <h4>Connect With Us</h4>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/TheWellsOfRevivalKenya"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/thewellsofrevivalministries/"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/TheWellsOfRevivalKenya" aria-label="Visit our Facebook page" rel="noopener" target="_blank">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/thewellsofrevivalministries/" aria-label="Visit our Instagram page" rel="noopener" target="_blank">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Visit our YouTube channel" rel="noopener" target="_blank">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Visit our Twitter page" rel="noopener" target="_blank">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -234,16 +342,11 @@
             <p>&copy; 2025 Wells of Revival. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/sermons.js"></script>
-    <script src="js/ministry.js"></script>
+    
+    <!-- Scripts loaded at the end for better performance -->
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/sermons.js" defer></script>
+    <script src="js/ministry.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-

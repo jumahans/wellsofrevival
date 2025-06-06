@@ -3,37 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wells of Revival | Giving</title>
-    <meta name="description" content="Support the ministry of Wells of Revival through your giving. Find secure ways to donate and partner with our mission.">
-    <meta name="keywords" content="church giving, tithes and offerings, donate to Wells of Revival, Christian donations, support ministry">
+    <title>Wells of Revival | Giving - Support Our Ministry in Thika</title>
+    <meta name="description" content="Support Wells of Revival Church through secure online giving. Contribute to tithes, offerings, missions, and building fund. M-Pesa: 247247, Account: 340191">
+    <meta name="keywords" content="church giving, tithes and offerings, donate to Wells of Revival, Christian donations, support ministry, M-Pesa church donations, Thika church giving">
     <meta name="author" content="Wells of Revival Church">
-    <meta property="og:title" content="Wells of Revival | Giving">
-    <meta property="og:description" content="Give securely online to support the vision and work of Wells of Revival Church in Majengo, Thika.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Wells of Revival | Giving - Support Our Ministry">
+    <meta property="og:description" content="Give securely online to support the vision and work of Wells of Revival Church in Majengo, Thika. Multiple giving options available.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jumahans.github.io/wellsofrevival/giving.html">
     <meta property="og:image" content="https://jumahans.github.io/wellsofrevival/images/give.jpeg">
-
+    <meta property="og:image:alt" content="Wells of Revival Church giving and donations">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wells of Revival | Giving">
+    <meta name="twitter:description" content="Support our ministry through secure online giving. M-Pesa and bank transfer options available.">
+    
+    <!-- Structured Data for Donations -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Church",
+        "name": "Wells of Revival",
+        "description": "Church giving and donations page",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Majengo",
+            "addressLocality": "Thika",
+            "addressCountry": "Kenya"
+        },
+        "telephone": "+254-727-502-355",
+        "email": "thewellsofrevival.ke@gmail.com",
+        "url": "https://jumahans.github.io/wellsofrevival/giving.html",
+        "potentialAction": {
+            "@type": "DonateAction",
+            "target": "https://jumahans.github.io/wellsofrevival/giving.html"
+        }
+    }
+    </script>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" as="style">
+    <link rel="preload" href="images/logo.jpeg" as="image">
+    
+    <!-- Critical CSS -->
+    <style>
+        .announcement-bar { background: #333; color: white; text-align: center; padding: 8px 0; }
+        .main-nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+        .ministry-hero { position: relative; min-height: 60vh; display: flex; align-items: center; }
+        .giving-hero-content { text-align: center; color: white; }
+    </style>
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/giving.css">
-    <link rel="stylesheet" href="css/ministry.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/giving.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/ministry.css" media="print" onload="this.media='all'">
+    
+    <!-- Font Awesome with defer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/logo.jpeg">
-
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+    <link rel="apple-touch-icon" href="images/logo.jpeg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jumahans.github.io/wellsofrevival/giving.html">
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Quick Announcements Bar -->
-    <div class="announcement-bar">
+    <div class="announcement-bar" role="banner">
         <div class="announcement-content">
             <p>Join us this Sunday for a special service at 9:00 AM</p>
         </div>
     </div>
-
+    
     <!-- Navigation -->
-    <nav class="main-nav">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+            <a href="index.html" aria-label="Wells of Revival Home">
+                <img src="images/logo.jpeg" alt="Wells of Revival Logo" width="50" height="50" loading="eager">
                 <span>The Wells of Revival</span>
             </a>
         </div>
@@ -44,186 +101,208 @@
             <a href="events.html">Events</a>
             <a href="announcements.html">Ministries</a>
             <a href="contact.html">Contact</a>
-            <a href="giving.html" class="active donate-btn">Give</a>
+            <a href="giving.html" class="active donate-btn" aria-current="page">Give</a>
         </div>
-        <div class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
     </nav>
-
-    <section class="ministry-hero">
-        <div class="image-background">
-            <img src="images/give.jpeg" alt="Church" class="hero-full-image">
-            <div class="image-foreground"></div>
-        </div>
-        <div class="ministry-hero-content container giving-hero-content">
-            <h1 class="fade-in">Giving</h1>
-            <p class="subtitle fade-in">Supporting the Kingdom of God</p>
-            <div class="scripture fade-in">
-                <p>"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver." - 2 Corinthians 9:7</p>
+    
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="ministry-hero" aria-labelledby="giving-hero-heading">
+            <div class="image-background">
+                <img src="images/give.jpeg" alt="Church members giving and supporting ministry" class="hero-full-image" loading="eager" width="1200" height="600">
+                <div class="image-foreground"></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Why Give Section -->
-    <section class="why-give fade-on-scroll">
-        <div class="container">
-            <h2>Why We Give</h2>
-            <div class="giving-principles">
-                <div class="principle-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Act of Worship</h3>
-                    <p>Giving is an act of worship that acknowledges God as the source of all blessings and expresses our gratitude to Him.</p>
-                </div>
-                
-                <div class="principle-card">
-                    <i class="fas fa-hands-helping"></i>
-                    <h3>Kingdom Advancement</h3>
-                    <p>Your giving helps advance God's kingdom through evangelism, discipleship, and community outreach programs.</p>
-                </div>
-                
-                <div class="principle-card">
-                    <i class="fas fa-church"></i>
-                    <h3>Church Operations</h3>
-                    <p>Your faithful giving supports the day-to-day operations of the church, including facilities, staff, and ministry resources.</p>
-                </div>
-                
-                <div class="principle-card">
-                    <i class="fas fa-globe-africa"></i>
-                    <h3>Global Missions</h3>
-                    <p>Your generosity extends beyond our local community to support missions and humanitarian efforts around the world.</p>
+            <div class="ministry-hero-content container giving-hero-content">
+                <h1 id="giving-hero-heading" class="fade-in">Giving</h1>
+                <p class="subtitle fade-in">Supporting the Kingdom of God</p>
+                <div class="scripture fade-in">
+                    <blockquote cite="https://www.bible.com/bible/111/2CO.9.7">
+                        <p>"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."</p>
+                        <cite>- 2 Corinthians 9:7</cite>
+                    </blockquote>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Ways to Give Section -->
-    <section class="ways-to-give fade-on-scroll">
-        <div class="container">
-            <h2>Ways to Give</h2>
-            <div class="giving-methods">
-                <div class="giving-method">
-                    <div class="method-icon">
-                        <i class="fas fa-mobile-alt"></i>
+        </section>
+        
+        <!-- Why Give Section -->
+        <section class="why-give fade-on-scroll" aria-labelledby="why-give-heading">
+            <div class="container">
+                <h2 id="why-give-heading">Why We Give</h2>
+                <div class="giving-principles">
+                    <div class="principle-card">
+                        <i class="fas fa-heart" aria-hidden="true"></i>
+                        <h3>Act of Worship</h3>
+                        <p>Giving is an act of worship that acknowledges God as the source of all blessings and expresses our gratitude to Him.</p>
                     </div>
-                    <div class="method-details">
-                        <h3>Mobile Money</h3>
-                        <p>Give conveniently through M-Pesa:</p>
-                        <div class="method-instructions">
-                            <p><strong>Paybill Number:</strong>247247</p>
-                            <p><strong>Account Number:</strong>340191</p>
+                    
+                    <div class="principle-card">
+                        <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                        <h3>Kingdom Advancement</h3>
+                        <p>Your giving helps advance God's kingdom through evangelism, discipleship, and community outreach programs.</p>
+                    </div>
+                    
+                    <div class="principle-card">
+                        <i class="fas fa-church" aria-hidden="true"></i>
+                        <h3>Church Operations</h3>
+                        <p>Your faithful giving supports the day-to-day operations of the church, including facilities, staff, and ministry resources.</p>
+                    </div>
+                    
+                    <div class="principle-card">
+                        <i class="fas fa-globe-africa" aria-hidden="true"></i>
+                        <h3>Global Missions</h3>
+                        <p>Your generosity extends beyond our local community to support missions and humanitarian efforts around the world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Ways to Give Section -->
+        <section class="ways-to-give fade-on-scroll" aria-labelledby="ways-to-give-heading">
+            <div class="container">
+                <h2 id="ways-to-give-heading">Ways to Give</h2>
+                <div class="giving-methods">
+                    <div class="giving-method">
+                        <div class="method-icon">
+                            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="method-details">
+                            <h3>Mobile Money (M-Pesa)</h3>
+                            <p>Give conveniently through M-Pesa:</p>
+                            <div class="method-instructions">
+                                <p><strong>Paybill Number:</strong> <span class="highlight">247247</span></p>
+                                <p><strong>Account Number:</strong> <span class="highlight">340191</span></p>
+                                <p><em>Available 24/7 for your convenience</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="giving-method">
+                        <div class="method-icon">
+                            <i class="fas fa-university" aria-hidden="true"></i>
+                        </div>
+                        <div class="method-details">
+                            <h3>Bank Transfer</h3>
+                            <p>Make a direct bank transfer to our church account:</p>
+                            <div class="method-instructions">
+                                <p><strong>Paybill Number:</strong> <span class="highlight">972900</span></p>
+                                <p><strong>Account Number:</strong> <span class="highlight">06004100015</span></p>
+                                <p><em>Secure bank-to-bank transfer</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="giving-method">
+                        <div class="method-icon">
+                            <i class="fas fa-hand-holding-usd" aria-hidden="true"></i>
+                        </div>
+                        <div class="method-details">
+                            <h3>In-Person Giving</h3>
+                            <p>Give during our Sunday services:</p>
+                            <div class="method-instructions">
+                                <p><strong>Service Times:</strong></p>
+                                <ul>
+                                    <li>First Service: 8:00 AM - 9:30 AM</li>
+                                    <li>Second Service: 10:00 AM - 11:30 AM</li>
+                                </ul>
+                                <p><strong>Location:</strong> Majengo, Thika, Kenya</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="giving-method">
-                    <div class="method-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="method-details">
-                        <h3>Bank Transfer</h3>
-                        <p>Make a direct bank transfer to our church account:</p>
-                        <div class="method-instructions">
-                            <p><strong>Paybill Number:</strong>972900</p>
-                            <p><strong>Account Number:</strong>06004100015</p>
+            </div>
+        </section>
+        
+        <!-- Giving Categories Section -->
+        <section class="giving-categories fade-on-scroll" aria-labelledby="giving-categories-heading">
+            <div class="container">
+                <h2 id="giving-categories-heading">Giving Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
                         </div>
+                        <h3>Tithes</h3>
+                        <p>The biblical principle of giving 10% of your income to support God's work through the local church.</p>
                     </div>
-                </div>
-                
-                <div class="giving-method">
-                    <div class="method-icon">
-                        <i class="fas fa-hand-holding-usd"></i>
-                    </div>
-                    <div class="method-details">
-                        <h3>In-Person Giving</h3>
-                        <p>Give during our Sunday services:</p>
-                        <div class="method-instructions">
-                            <p><strong>Church Hours:</strong> Sunday, <br> First Service 8:00 AM - 10:00 AM <br> Second Service 10:30 Am - 12:30 PM</p>
-                            <p><strong>Address:</strong> Majengo, Thika, Kenya</p>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-gift" aria-hidden="true"></i>
                         </div>
+                        <h3>Offerings</h3>
+                        <p>Gifts given above and beyond tithes to support the general operations and ministries of the church.</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-seedling" aria-hidden="true"></i>
+                        </div>
+                        <h3>Infrastructure & Development</h3>
+                        <p>Offerings given to support church development and building projects.</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                        </div>
+                        <h3>Benevolence</h3>
+                        <p>Gifts that help those in need within our church and community through our compassion ministries.</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-globe-africa" aria-hidden="true"></i>
+                        </div>
+                        <h3>Missions</h3>
+                        <p>Support for our mission efforts to spread the Gospel and serve communities locally and globally.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Giving Categories Section -->
-    <section class="giving-categories fade-on-scroll">
-        <div class="container">
-            <h2>Giving Categories</h2>
-            <div class="categories-grid">
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-hand-holding-heart"></i>
-                    </div>
-                    <h3>Tithes</h3>
-                    <p>The biblical principle of giving 10% of your income to support God's work through the local church.</p>
-                </div>
-                
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-gift"></i>
-                    </div>
-                    <h3>Offerings</h3>
-                    <p>Gifts given above and beyond tithes to support the general operations and ministries of the church.</p>
-                </div>
-                
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>Infrastructure & Developement</h3>
-                    <p>Offering given to support church developement.</p>
-                </div>
-                                
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <h3>Benevolence</h3>
-                    <p>Gifts that help those in need within our church and community through our compassion ministries.</p>
-                </div>
-                
-                <div class="category-card">
-                    <div class="category-icon">
-                        <i class="fas fa-globe-africa"></i>
-                    </div>
-                    <h3>Missions</h3>
-                    <p>Support for ours mission efforts to spread the Gospel and serve communities.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
+        </section>
+    </main>
+    
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <img src="images/logo.jpeg" alt="Wells of Revival Logo" loading="lazy" width="80" height="80">
                 <h3>Wells of Revival</h3>
-                <p> Raising eagles in the Kingdom, Men and Women of character and integrity. </p>
+                <p>Raising eagles in the Kingdom, Men and Women of character and integrity.</p>
             </div>
             <div class="footer-contact">
                 <h4>Contact Us</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Majengo, Thika, Kenya</p>
-                <p><i class="fas fa-phone"></i> +254-727-502-355</p>
-                <p><i class="fas fa-envelope"></i>thewellsofrevival.ke@gmail.com</p>
+                <address>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Majengo, Thika, Kenya</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+254727502355" style="color: white !important;">+254-727-502-355</a></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:thewellsofrevival.ke@gmail.com" style="color: white;">thewellsofrevival.ke@gmail.com</a></p>
+                </address>
             </div>
             <div class="footer-services">
+                <h4>Service Times</h4>
                 <ul>
                     <li>First service: 8:00 AM - 9:30 AM</li>
-                    <li>Second Service: 10:00 AM - 11:30 PM</li>
-                    <li>Descipleship/Mentorship Classes <br> 11:45AM - 12:30 PM </li>
+                    <li>Second Service: 10:00 AM - 11:30 AM</li>
+                    <li>Discipleship/Mentorship Classes <br> 11:45 AM - 12:30 PM</li>
                 </ul>
             </div>
             <div class="footer-social">
                 <h4>Connect With Us</h4>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/TheWellsOfRevivalKenya"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/thewellsofrevivalministries/"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/TheWellsOfRevivalKenya" aria-label="Visit our Facebook page" rel="noopener">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/thewellsofrevivalministries/" aria-label="Visit our Instagram page" rel="noopener">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Visit our YouTube channel" rel="noopener">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Visit our Twitter page" rel="noopener">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -231,10 +310,26 @@
             <p>&copy; 2025 Wells of Revival. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/giving.js"></script>
-    <script src="js/ministry.js"></script>
+    
+    <!-- Scripts loaded with defer for better performance -->
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/giving.js" defer></script>
+    <script src="js/ministry.js" defer></script>
+    
+    <!-- Service Worker for caching -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+    </script>
 </body>
 </html>

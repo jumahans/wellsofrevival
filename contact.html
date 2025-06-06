@@ -4,35 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wells of Revival | Contact Us</title>
-    <meta name="description" content="Get in touch with Wells of Revival Church in Majengo, Thika. Find our location, service times, and contact details.">
-    <meta name="keywords" content="Contact Wells of Revival, church location, Thika church contact, Majengo church">
+    <meta name="description" content="Get in touch with Wells of Revival Church in Majengo, Thika. Find our location, service times, phone +254-727-502-355, and contact details.">
+    <meta name="keywords" content="Contact Wells of Revival, church location, Thika church contact, Majengo church, service times">
     <meta name="author" content="Wells of Revival Church">
+    
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Wells of Revival | Contact Us">
-    <meta property="og:description" content="Contact Wells of Revival Church for inquiries, directions, or to plan a visit. We’d love to connect with you.">
+    <meta property="og:description" content="Contact Wells of Revival Church for inquiries, directions, or to plan a visit. We'd love to connect with you.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jumahans.github.io/wellsofrevival/contact.html">
-    <meta property="og:image" content="https://jumahans.github.io/wellsofrevival/images.wells.jpg">
-
+    <meta property="og:image" content="https://jumahans.github.io/wellsofrevival/images/wells.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wells of Revival | Contact Us">
+    <meta name="twitter:description" content="Contact Wells of Revival Church for inquiries, directions, or to plan a visit. We'd love to connect with you.">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://www.google.com">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="images/logo.jpeg" as="image">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/ministry.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- Fonts with display=swap for better performance -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/logo.jpeg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+    <link rel="apple-touch-icon" href="images/logo.jpeg">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Church",
+        "name": "Wells of Revival",
+        "description": "Raising eagles in the Kingdom, Men and Women of character and integrity",
+        "url": "https://jumahans.github.io/wellsofrevival/contact.html",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Majengo",
+            "addressLocality": "Thika",
+            "addressCountry": "Kenya"
+        },
+        "telephone": "+254-727-502-355",
+        "email": "thewellsofrevival.ke@gmail.com",
+        "openingHours": [
+            "Su 08:00-12:00",
+            "We 18:00-19:30"
+        ],
+        "sameAs": [
+            "https://www.facebook.com/TheWellsOfRevivalKenya",
+            "https://www.instagram.com/thewellsofrevivalministries/"
+        ]
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
+    
     <!-- Quick Announcements Bar -->
-    <div class="announcement-bar">
+    <div class="announcement-bar" role="banner" aria-label="Church announcement">
         <div class="announcement-content">
             <p>Join us this Sunday for a special service at 9:00 AM</p>
         </div>
     </div>
-
+    
     <!-- Navigation -->
-    <nav class="main-nav">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+            <a href="index.html" aria-label="Wells of Revival Home">
+                <img src="images/logo.jpeg" alt="Wells of Revival Church Logo" width="50" height="50">
                 <span>The Wells of Revival</span>
             </a>
         </div>
@@ -42,152 +96,221 @@
             <a href="sermons.html">Sermons</a>
             <a href="events.html">Events</a>
             <a href="announcements.html">Ministries</a>
-            <a href="contact.html" class="active">Contact</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
             <a href="giving.html" class="donate-btn">Give</a>
         </div>
-        <div class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
     </nav>
-
-    <!-- Contact Hero Section -->
-    <section class="ministry-hero">
-        <div class="image-background">
-            <img src="images/wells.jpg" alt="Church" class="hero-full-image">
-            <div class="image-foreground"></div>
-        </div>
-        <div class="ministry-hero-content container about-hero-content">
-            <h1 class="fade-in" style="color: white !important;">Connect with us</h1>
-            <p class="subtitle fade-in">We'd love to hear from you</p>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="contact-form-section">
-        <div class="contact-container">
-            <!-- Contact Information -->
-            <div class="contact-info">
-                <h2>Get in Touch</h2>
-                <p>We're here to help and answer any questions you might have. We look forward to hearing from you.</p>
-                
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="contact-item-content">
-                            <h4>Visit Us</h4>
-                            <p>Wells of Revival Church<br>Majengo, Thika, Kenya</p>
+    
+    <main id="main-content">
+        <!-- Contact Hero Section -->
+        <section class="ministry-hero" role="banner">
+            <div class="image-background">
+                <img src="images/wells.jpg" alt="Wells of Revival Church building exterior" class="hero-full-image" loading="eager">
+                <div class="image-foreground" aria-hidden="true"></div>
+            </div>
+            <div class="ministry-hero-content container about-hero-content">
+                <h1 class="fade-in" style="color: white !important;">Connect with us</h1>
+                <p class="subtitle fade-in">We'd love to hear from you</p>
+            </div>
+        </section>
+        
+        <!-- Contact Form Section -->
+        <section class="contact-form-section" aria-labelledby="contact-heading">
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2 id="contact-heading">Get in Touch</h2>
+                    <p>We're here to help and answer any questions you might have. We look forward to hearing from you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <div class="contact-item-content">
+                                <h3>Visit Us</h3>
+                                <address>
+                                    Wells of Revival Church<br>
+                                    Majengo, Thika, Kenya
+                                </address>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <div class="contact-item-content">
+                                <h3>Call Us</h3>
+                                <p>
+                                    <a href="tel:+254727502355">+254-727-502-355</a><br>
+                                    <span class="contact-note">Main Church Line</span>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <div class="contact-item-content">
+                                <h3>Email Us</h3>
+                                <p>
+                                    <a href="mailto:thewellsofrevival.ke@gmail.com">thewellsofrevival.ke@gmail.com</a><br>
+                                    <span class="contact-note">General Inquiries</span>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            <div class="contact-item-content">
+                                <h3>Service Times</h3>
+                                <ul>
+                                    <li><time datetime="08:00">Sunday: 8:00 AM</time> - <time datetime="12:00">12:00 PM</time></li>
+                                    <li><time datetime="18:00">Wednesday: 6:00 PM</time> - <time datetime="19:30">7:30 PM</time></li>
+                                    <li><time datetime="21:00">Wednesday: 9:00 PM</time> - <time datetime="21:30">9:30 PM</time></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div class="contact-item-content">
-                            <h4>Call Us</h4>
-                            <p>+254 XXX XXX XXX<br>+254 XXX XXX XXX</p>
-                        </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/TheWellsOfRevivalKenya" aria-label="Visit our Facebook page" rel="noopener" target="_blank">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/thewellsofrevivalministries/" aria-label="Visit our Instagram page" rel="noopener" target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Visit our YouTube channel" rel="noopener" target="_blank">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Visit our Twitter page" rel="noopener" target="_blank">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
                     </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Office Hours Section -->
+        <section class="office-hours" aria-labelledby="hours-heading">
+            <div class="office-hours-content">
+                <h2 id="hours-heading">Office Hours & Service Times</h2>
+                <div class="hours-grid">
+                    <article class="hours-card">
+                        <i class="fas fa-church" aria-hidden="true"></i>
+                        <h3>Sunday Services</h3>
+                        <ul class="hours-list">
+                            <li>
+                                <span class="day">First Service</span>
+                                <span class="time"><time datetime="08:00">8:00 AM</time> - <time datetime="09:30">9:30 AM</time></span>
+                            </li>
+                            <li>
+                                <span class="day">Second Service</span>
+                                <span class="time"><time datetime="10:00">10:00 AM</time> - <time datetime="11:30">11:30 AM</time></span>
+                            </li>
+                            <li>
+                                <span class="day">Discipleship Classes</span>
+                                <span class="time"><time datetime="11:45">11:45 AM</time> - <time datetime="12:30">12:30 PM</time></span>
+                            </li>
+                        </ul>
+                    </article>
                     
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div class="contact-item-content">
-                            <h4>Email Us</h4>
-                            <p>example@wellsofrevival.org<br>example@wellsofrevival.org</p>
-                        </div>
-                    </div>
+                    <article class="hours-card">
+                        <i class="fas fa-pray" aria-hidden="true"></i>
+                        <h3>Weekday Services</h3>
+                        <ul class="hours-list">
+                            <li>
+                                <span class="day">Wednesday Prayer</span>
+                                <span class="time"><time datetime="18:00">6:00 PM</time> - <time datetime="19:30">7:30 PM</time></span>
+                            </li>
+                            <li>
+                                <span class="day">Wednesday Bible Study</span>
+                                <span class="time"><time datetime="21:00">9:00 PM</time> - <time datetime="21:30">9:30 PM</time></span>
+                            </li>
+                        </ul>
+                    </article>
                     
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div class="contact-item-content">
-                            <h4>Service Times</h4>
-                            <p>Sunday: 8:00 AM - 12:00 PM<br>Wednesday: 6:00 PM - 7:30 PM<br>Wednesday: 9:00 PM - 9:30 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Office Hours Section -->
-    <section class="office-hours">
-        <div class="office-hours-content">
-            <h2>Office Hours & Service Times</h2>
-            <div class="hours-grid">
-                <div class="hours-card">
-                    <i class="fas fa-church"></i>
-                    <h3>Sunday Services</h3>
-                    <ul class="hours-list">
-                        <li><span class="day">Morning Service</span><span class="time">8:00 AM - 12:00 PM</span></li>
-                        <li><span class="day">Sunday School</span><span class="time">9:00 AM - 10:00 AM</span></li>
-                    </ul>
-                </div>
-                
-                <div class="hours-card">
-                    <i class="fas fa-pray"></i>
-                    <h3>Weekday Services</h3>
-                    <ul class="hours-list">
-                        <li><span class="day">Wednesday Prayer</span><span class="time">6:00 PM - 7:30 PM</span></li>
-                        <li><span class="day">Wednesday Bible Study</span><span class="time">9:00 PM - 9:30 PM</span></li>
-                    </ul>
-                </div>
-                
-                <div class="hours-card">
-                    <i class="fas fa-building"></i>
-                    <h3>Office Hours</h3>
-                    <ul class="hours-list">
-                        <li><span class="day">Monday - Friday</span><span class="time">9:00 AM - 5:00 PM</span></li>
-                        <li><span class="day">Saturday</span><span class="time">10:00 AM - 2:00 PM</span></li>
-                        <li><span class="day">Sunday</span><span class="time">Closed</span></li>
-                    </ul>
+                    <article class="hours-card">
+                        <i class="fas fa-building" aria-hidden="true"></i>
+                        <h3>Office Hours</h3>
+                        <ul class="hours-list">
+                            <li>
+                                <span class="day">Monday - Friday</span>
+                                <span class="time"><time datetime="09:00">9:00 AM</time> - <time datetime="17:00">5:00 PM</time></span>
+                            </li>
+                            <li>
+                                <span class="day">Saturday</span>
+                                <span class="time"><time datetime="10:00">10:00 AM</time> - <time datetime="14:00">2:00 PM</time></span>
+                            </li>
+                            <li>
+                                <span class="day">Sunday</span>
+                                <span class="time">Closed</span>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="container">
-            <h2>Find Us</h2>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.499096747871!2d37.08165767404412!3d-1.0362134354020058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4e62b53da841%3A0xbed071bf1770a28c!2sWells%20of%20Revival%20Ministries!5e1!3m2!1sen!2ske!4v1748000445027!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+        <!-- Map Section -->
+        <section class="map-section" aria-labelledby="map-heading">
+            <div class="container">
+                <h2 id="map-heading">Find Us</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.499096747871!2d37.08165767404412!3d-1.0362134354020058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4e62b53da841%3A0xbed071bf1770a28c!2sWells%20of%20Revival%20Ministries!5e1!3m2!1sen!2ske!4v1748000445027!5m2!1sen!2ske" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Wells of Revival Church location in Majengo, Thika, Kenya"
+                        aria-label="Interactive map showing Wells of Revival Church location">
+                    </iframe>
+                </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
+    
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <img src="images/logo.jpeg" alt="Wells of Revival Church Logo" width="80" height="80" loading="lazy">
                 <h3>Wells of Revival</h3>
-                <p> Raising eagles in the Kingdom, Men and Women of character and integrity.</p>
+                <p>Raising eagles in the Kingdom, Men and Women of character and integrity.</p>
             </div>
             <div class="footer-contact">
                 <h4>Contact Us</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Majengo, Thika, Kenya</p>
-                <p><i class="fas fa-phone"></i> +254-727-502-355</p>
-                <p><i class="fas fa-envelope"></i>thewellsofrevival.ke@gmail.com</p>
+                <address>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Majengo, Thika, Kenya</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+254727502355" style="color: white !important;">+254-727-502-355</a></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:thewellsofrevival.ke@gmail.com" style="color: white;">thewellsofrevival.ke@gmail.com</a></p>
+                </address>
             </div>
             <div class="footer-services">
+                <h4>Service Times</h4>
                 <ul>
-                    <li>First service: 8:00 AM - 9:30 AM</li>
-                    <li>Second Service: 10:00 AM - 11:30 PM</li>
-                    <li>Descipleship/Mentorship Classes <br> 11:45AM - 12:30 PM </li>
+                    <li>First service: <time datetime="08:00">8:00 AM</time> - <time datetime="09:30">9:30 AM</time></li>
+                    <li>Second Service: <time datetime="10:00">10:00 AM</time> - <time datetime="11:30">11:30 AM</time></li>
+                    <li>Discipleship/Mentorship Classes<br><time datetime="11:45">11:45 AM</time> - <time datetime="12:30">12:30 PM</time></li>
                 </ul>
             </div>
             <div class="footer-social">
                 <h4>Connect With Us</h4>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/TheWellsOfRevivalKenya"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/thewellsofrevivalministries/"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/TheWellsOfRevivalKenya" aria-label="Visit our Facebook page" rel="noopener" target="_blank">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/thewellsofrevivalministries/" aria-label="Visit our Instagram page" rel="noopener" target="_blank">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Visit our YouTube channel" rel="noopener" target="_blank">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Visit our Twitter page" rel="noopener" target="_blank">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -195,9 +318,11 @@
             <p>&copy; 2025 Wells of Revival. All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/ministry.js"></script>
+    
+    <!-- Scripts loaded at the end for better performance -->
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/contact.js" defer></script>
+    <script src="js/ministry.js" defer></script>
 </body>
 </html>

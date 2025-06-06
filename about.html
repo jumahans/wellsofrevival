@@ -4,329 +4,404 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wells of Revival | About Us</title>
-    <meta name="description" content="Learn about the mission, vision, and leadership of Wells of Revival Church in Majengo, Thika.">
-    <meta name="keywords" content="About Wells of Revival, church leadership, mission, vision, Thika church">
+    <meta name="description" content="Learn about the mission, vision, and leadership of Wells of Revival Church in Majengo, Thika. Discover our history since 2001 and our beliefs.">
+    <meta name="keywords" content="About Wells of Revival, church leadership, mission, vision, Thika church, Christian beliefs">
     <meta name="author" content="Wells of Revival Church">
+    
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Wells of Revival | About Us">
     <meta property="og:description" content="Get to know the heart and purpose behind Wells of Revival Church. Meet our pastors and discover our values.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jumahans.github.io/wellsofrevival/about.html">
     <meta property="og:image" content="https://jumahans.github.io/wellsofrevival/images/church_image.webp">
-
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wells of Revival | About Us">
+    <meta name="twitter:description" content="Get to know the heart and purpose behind Wells of Revival Church. Meet our pastors and discover our values.">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="images/logo.jpeg" as="image">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/extra_about.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/extra.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- Fonts with display=swap for better performance -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/logo.jpeg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+    <link rel="apple-touch-icon" href="images/logo.jpeg">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Church",
+        "name": "Wells of Revival",
+        "description": "Raising eagles in the Kingdom, Men and Women of character and integrity",
+        "foundingDate": "2001-11-24",
+        "url": "https://jumahans.github.io/wellsofrevival/about.html",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Majengo",
+            "addressLocality": "Thika",
+            "addressCountry": "Kenya"
+        },
+        "telephone": "+254-727-502-355",
+        "email": "thewellsofrevival.ke@gmail.com",
+        "founder": [
+            {
+                "@type": "Person",
+                "name": "Rev. John Ayisi"
+            },
+            {
+                "@type": "Person",
+                "name": "Pastor Joyce Ayisi"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
+    
     <!-- Quick Announcements Bar -->
-    <div class="announcement-bar">
+    <div class="announcement-bar" role="banner" aria-label="Church announcement">
         <div class="announcement-content">
             <p>Join us this Sunday for a special service at 9:00 AM</p>
         </div>
     </div>
-
+    
     <!-- Navigation -->
-    <nav class="main-nav">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+            <a href="index.html" aria-label="Wells of Revival Home">
+                <img src="images/logo.jpeg" alt="Wells of Revival Church Logo" width="50" height="50">
                 <span>The Wells of Revival</span>
             </a>
         </div>
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
+            <a href="about.html" class="active" aria-current="page">About</a>
             <a href="sermons.html">Sermons</a>
             <a href="events.html">Events</a>
             <a href="announcements.html">Ministries</a>
             <a href="contact.html">Contact</a>
             <a href="giving.html" class="donate-btn">Give</a>
         </div>
-        <div class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
     </nav>
-           
-    <section class="about-hero">
-        <div class="image-background">
-            <img src="images/praise.jpg" alt="Church" class="hero-full-image">
-            <div class="image-foreground"></div>
-        </div>
-        <div class="about-hero-content container">
-            <h1 class="fade-in" style="color: white !important;">Our Story</h1>
-            <p class="about-subtitle fade-in">Transforming Lives Through Christ's Love</p>
-        </div>
-    </section>
-
-    <!-- Church History & Mission -->
-    <section class="mission fade-on-scroll">
-        <div class="container">
-            <div class="mission-content">
-                <div class="mission-text">
-                    <h2>Our History & Mission</h2>
-                    <p>The wells of revival Ministry came into being as as result of Gode speaking to Rev. John Ayisi and his wife Pastor Joyce Ayisi. The first sunday service was held on 24<sup>th</sup> Nov 2001.</p>
-                                        
-                    <p>The Ministry was born out of a call of god uponHis servant to raise upmen and women of integrity & character who will be a beginning of a new generation wherever they are.</p>
-                    <p>Overturning the purpose of the enemy through spiritual spiritual warfare, changing the history and destiny of their people and becoming an instrument of strength and encouragementto God's people throught strategic praying and declaration of the word in the name of jesusChrist of Nazareth.</p>
-                    <p>This becomes the hub of God's will and purpose for the ministry. A clear vision was realized, recognizing that the primary mandate for the mission of the church was to evangelize, teach and train God called workers.</p>
-                    <p>the driving force behind the siccessof the wells of revival ministry has been prayer and the preaching of the solid word of God and the naked cross of Jesus Christ.</p>
-                    <p>Over the years, we have witnessed countless lives transformed through the power of God's Word and the fellowship of believers. Our congregation has grown not just in numbers but in spiritual depth and community impact.</p>
-                </div>
-                <div class="mission-image">
-                    <img src="images/church_image.webp" alt="Church History">
+    
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="about-hero" role="banner">
+            <div class="image-background">
+                <img src="images/praise.jpg" alt="Church congregation in worship and praise" class="hero-full-image" loading="eager">
+                <div class="image-foreground" aria-hidden="true"></div>
+            </div>
+            <div class="about-hero-content container">
+                <h1 class="fade-in" style="color: white !important;">Our Story</h1>
+                <p class="about-subtitle fade-in">Transforming Lives Through Christ's Love</p>
+            </div>
+        </section>
+        
+        <!-- Church History & Mission -->
+        <section class="mission fade-on-scroll" aria-labelledby="history-heading">
+            <div class="container">
+                <div class="mission-content">
+                    <div class="mission-text">
+                        <h2 id="history-heading">Our History & Mission</h2>
+                        <p>The Wells of Revival Ministry came into being as a result of God speaking to Rev. John Ayisi and his wife Pastor Joyce Ayisi. The first Sunday service was held on <time datetime="2001-11-24">24th November 2001</time>.</p>
+                        
+                        <p>The Ministry was born out of a call of God upon His servant to raise up men and women of integrity & character who will be a beginning of a new generation wherever they are.</p>
+                        
+                        <p>Overturning the purpose of the enemy through spiritual warfare, changing the history and destiny of their people and becoming an instrument of strength and encouragement to God's people through strategic praying and declaration of the word in the name of Jesus Christ of Nazareth.</p>
+                        
+                        <p>This becomes the hub of God's will and purpose for the ministry. A clear vision was realized, recognizing that the primary mandate for the mission of the church was to evangelize, teach and train God called workers.</p>
+                        
+                        <p>The driving force behind the success of the Wells of Revival ministry has been prayer and the preaching of the solid word of God and the naked cross of Jesus Christ.</p>
+                        
+                        <p>Over the years, we have witnessed countless lives transformed through the power of God's Word and the fellowship of believers. Our congregation has grown not just in numbers but in spiritual depth and community impact.</p>
+                    </div>
+                    <div class="mission-image">
+                        <img src="images/church_image.webp" alt="Wells of Revival Church building and congregation" loading="lazy">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Our Vision & Values -->
-    <section id="beliefs" class="beliefs-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What We Believe</h2>
-                <p class="section-subtitle">Our Foundation of Faith</p>
-            </div>
-            
-            <div class="beliefs-content">
-                <!-- Tenets of Faith -->
-                <div class="belief-category">
-                    <h3 class="category-title">Tenets of Faith</h3>
-                    <div class="beliefs-grid">
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="100">
-                            <div class="belief-icon">
-                                <i class="fas fa-cross"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>God the Creator</h4>
-                                <p>We believe in God the creator of heaven and earth and all therein. <em>(Gen 1:1-2, Ex 20:11, 1 Sam 2:8-2, 2 Kings 19:6, 1 Chron 16:26)</em></p>
-                            </div>
+        </section>
+        
+        <!-- Our Vision & Values -->
+        <section id="beliefs" class="beliefs-section" aria-labelledby="beliefs-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="beliefs-heading" class="section-title">What We Believe</h2>
+                    <p class="section-subtitle">Our Foundation of Faith</p>
+                </div>
+                
+                <div class="beliefs-content">
+                    <!-- Tenets of Faith -->
+                    <div class="belief-category">
+                        <h3 class="category-title">Tenets of Faith</h3>
+                        <div class="beliefs-grid">
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-cross"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>God the Creator</h4>
+                                    <p>We believe in God the creator of heaven and earth and all therein. <cite>(Gen 1:1-2, Ex 20:11, 1 Sam 2:8-2, 2 Kings 19:6, 1 Chron 16:26)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-dove"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>The Trinity</h4>
+                                    <p>We believe in God consisting of the Father, Son and Holy Spirit (Trinity). <cite>(2 Cor 13:14)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>Jesus Christ</h4>
+                                    <p>We believe in the deity of Jesus Christ, in His virgin birth, in His atoning death, in His bodily resurrection, in His ascension to the right hand of the Father. <cite>(1 Tim 3:16)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>The Bible</h4>
+                                    <p>We believe in the Bible as the inspired, infallible and authoritative word of God. <cite>(2 Peter 1:21)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="500">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>Salvation</h4>
+                                    <p>We believe that man was created in the image of God, fell from the glory of God through sin and therefore needs salvation. <cite>(Gen 1:2, Rom 3:26, Rom 5)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="600">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>Holy Spirit Baptism</h4>
+                                    <p>We believe in the baptism of the Holy Spirit and the manifestation, gifts, ministries and fruit of the Spirit in life. <cite>(Acts 2:4, Acts 10:46, Acts 19:16, 1 Cor 12:8-11, Gal 5:22-23)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="700">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>Divine Protection</h4>
+                                    <p>We believe in the protection and security of God for every believer who shall maintain a holy walk in the Spirit. <cite>(Jude 2, Rom 8:4)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="800">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>Divine Healing</h4>
+                                    <p>We believe in divine healing which is obtained on the basis of the atonement. <cite>(Ps 103:3, James 5:14-16, 1 Peter 2:24)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="900">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-crown"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>Second Coming</h4>
+                                    <p>We believe in the bodily return of our Saviour and Lord Jesus Christ in great power and glory at the close of the present age. <cite>(Dan 7:14, Acts 1:11, 1 Thess 4:13-18)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="1000">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-infinity"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>Resurrection</h4>
+                                    <p>We believe in the resurrection of both the saved and the lost. The saved unto eternal life and the lost unto eternal punishment. <cite>(John 5:28-29, 1 Cor
+                                    <p>We believe in the resurrection of both the saved and the lost. The saved unto eternal life and the lost unto eternal punishment. <cite>(John 5:28-29, 1 Cor 15:51-55, 1 Thess 4:13-18)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="1100">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-ring"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>Marriage</h4>
+                                    <p>We believe in the sanctity of marriage and the biblical view on monogamy (one man, one wife) as the ideal form of marriage. <cite>(Gen 2:24, Matt 5:27, Mark 10:7-9, Rom 7:2, 1 Cor 7:10-11, Heb 13:4)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="1200">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-baby"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>Child Dedication</h4>
+                                    <p>We believe in the dedication of infants by the laying of hands. <cite>(1 Sam 1:24-28)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="1300">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-bread-slice"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>Lord's Supper</h4>
+                                    <p>We believe in the fellowship of the Lord's Supper. <cite>(Matt 26:26, Mark 14:22, Luke 22:19-20, 1 Cor 10:16, 1 Cor 11:23)</cite></p>
+                                </div>
+                            </article>
+                            
+                            <article class="belief-item" data-aos="fade-up" data-aos-delay="1400">
+                                <div class="belief-icon" aria-hidden="true">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="belief-text">
+                                    <h4>Spiritual Authority</h4>
+                                    <p>We believe in God as the supreme power and authority over the heavens and the earth and that He has delegated power and authority through our Lord Jesus Christ to believers who can now claim victory over Satan and demonic forces of darkness. <cite>(Luke 10:19, Mark 6:7, Mark 16:17)</cite></p>
+                                </div>
+                            </article>
                         </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="200">
-                            <div class="belief-icon">
-                                <i class="fas fa-dove"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>The Trinity</h4>
-                                <p>We believe in God consisting of the Father, Son and Holy Spirit (Trinity). <em>(2 Cor 13:14)</em></p>
-                            </div>
+                    </div>
+                    
+                    <!-- Scope of Authority -->
+                    <div class="belief-category">
+                        <h3 class="category-title">Scope of Authority</h3>
+                        <div class="authority-content">
+                            <article class="authority-item" data-aos="slide-right" data-aos-delay="100">
+                                <div class="authority-number" aria-hidden="true">1</div>
+                                <div class="authority-text">
+                                    <p>We believe that the kingdom of God's government is theocratic, Christ being sovereign and reigning head who builds, governs and sets her in order through leadership ministry of apostles, prophets, evangelists, pastors and teachers.</p>
+                                </div>
+                            </article>
+                            
+                            <article class="authority-item" data-aos="slide-right" data-aos-delay="200">
+                                <div class="authority-number" aria-hidden="true">2</div>
+                                <div class="authority-text">
+                                    <p>We believe the church must have a person of Christ's appointing as the spiritual leader as discerned by the church leadership.</p>
+                                </div>
+                            </article>
+                            
+                            <article class="authority-item" data-aos="slide-right" data-aos-delay="300">
+                                <div class="authority-number" aria-hidden="true">3</div>
+                                <div class="authority-text">
+                                    <p>We know that democracy is not an appropriate form of government for the New Testament church as it is not supported by God's pattern shown in the Holy Scriptures.</p>
+                                </div>
+                            </article>
+                            
+                            <article class="authority-item" data-aos="slide-right" data-aos-delay="400">
+                                <div class="authority-number" aria-hidden="true">4</div>
+                                <div class="authority-text">
+                                    <p>Leaders shall be appointed according to gifting, grace and calling. This shall be done by the relevant authorities as stipulated in this document.</p>
+                                </div>
+                            </article>
+                            
+                            <article class="authority-item" data-aos="slide-right" data-aos-delay="500">
+                                <div class="authority-number" aria-hidden="true">5</div>
+                                <div class="authority-text">
+                                    <p>We pursue family covenant relationships which we believe to be the true pattern for New Testament church. There are three (3) ministry structures in the Wells of Revival Ministry:</p>
+                                    <ul>
+                                        <li>Local church structure</li>
+                                        <li>Regional council</li>
+                                        <li>National council</li>
+                                    </ul>
+                                </div>
+                            </article>
                         </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="300">
-                            <div class="belief-icon">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>Jesus Christ</h4>
-                                <p>We believe in the deity of Jesus Christ, in His virgin birth, in His atoning death, in His bodily resurrection, in His ascension to the right hand of the Father. <em>(1 Tim 3:16)</em></p>
-                            </div>
-                        </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="400">
-                            <div class="belief-icon">
-                                <i class="fas fa-book-open"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>The Bible</h4>
-                                <p>We believe in the Bible as the inspired, infallible and authoritative word of God. <em>(2 Peter 1:21)</em></p>
-                            </div>
-                        </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="500">
-                            <div class="belief-icon">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>Salvation</h4>
-                                <p>We believe that man was created in the image of God, fell from the glory of God through sin and therefore needs salvation. <em>(Gen 1:2, Rom 3:26, Rom 5)</em></p>
-                            </div>
-                        </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="600">
-                            <div class="belief-icon">
-                                <i class="fas fa-fire"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>Holy Spirit Baptism</h4>
-                                <p>We believe in the baptism of the Holy Spirit and the manifestation, gifts, ministries and fruit of the Spirit in life. <em>(Acts 2:4, Acts 10:46, Acts 19:16, 1 Cor 12:8-11, Gal 5:22-23)</em></p>
-                            </div>
-                        </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="700">
-                            <div class="belief-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>Divine Protection</h4>
-                                <p>We believe in the protection and security of God for every believer who shall maintain a holy walk in the Spirit. <em>(Jude 2, Rom 8:4)</em></p>
-                            </div>
-                        </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="800">
-                            <div class="belief-icon">
-                                <i class="fas fa-hands-helping"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>Divine Healing</h4>
-                                <p>We believe in divine healing which is obtained on the basis of the atonement. <em>(Ps 103:3, James 5:14-16, 1 Peter 2:24)</em></p>
-                            </div>
-                        </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="900">
-                            <div class="belief-icon">
-                                <i class="fas fa-crown"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>Second Coming</h4>
-                                <p>We believe in the bodily return of our Saviour and Lord Jesus Christ in great power and glory at the close of the present age. <em>(Dan 7:14, Acts 1:11, 1 Thess 4:13-18)</em></p>
-                            </div>
-                        </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="1000">
-                            <div class="belief-icon">
-                                <i class="fas fa-infinity"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>Resurrection</h4>
-                                <p>We believe in the resurrection of both the saved and the lost. The saved unto eternal life and the lost unto eternal punishment. <em>(John 5:28-29, 1 Cor 15:51-55, 1 Thess 4:13-18)</em></p>
-                            </div>
-                        </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="1100">
-                            <div class="belief-icon">
-                                <i class="fas fa-ring"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>Marriage</h4>
-                                <p>We believe in the sanctity of marriage and the biblical view on monogamy (one man, one wife) as the ideal form of marriage. <em>(Gen 2:24, Matt 5:27, Mark 10:7-9, Rom 7:2, 1 Cor 7:10-11, Heb 13:4)</em></p>
-                            </div>
-                        </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="1200">
-                            <div class="belief-icon">
-                                <i class="fas fa-baby"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>Child Dedication</h4>
-                                <p>We believe in the dedication of infants by the laying of hands. <em>(1 Sam 1:24-28)</em></p>
-                            </div>
-                        </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="1300">
-                            <div class="belief-icon">
-                                <i class="fas fa-bread-slice"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>Lord's Supper</h4>
-                                <p>We believe in the fellowship of the Lord's Supper. <em>(Matt 26:26, Mark 14:22, Luke 22:19-20, 1 Cor 10:16, 1 Cor 11:23)</em></p>
-                            </div>
-                        </div>
-
-                        <div class="belief-item" data-aos="fade-up" data-aos-delay="1400">
-                            <div class="belief-icon">
-                                <i class="fas fa-bolt"></i>
-                            </div>
-                            <div class="belief-text">
-                                <h4>Spiritual Authority</h4>
-                                <p>We believe in God as the supreme power and authority over the heavens and the earth and that He has delegated power and authority through our Lord Jesus Christ to believers who can now claim victory over Satan and demonic forces of darkness. <em>(Luke 10:19, Mark 6:7, Mark 16:17)</em></p>
+                    </div>
+                    
+                    <!-- Principle of Autonomy -->
+                    <div class="belief-category">
+                        <h3 class="category-title">Principle of Autonomy</h3>
+                        <div class="autonomy-content" data-aos="fade-up" data-aos-delay="100">
+                            <div class="autonomy-text">
+                                <p>We hold as Scripture and fundamental the principle of local church government by men and women of character and integrity according to <cite>(1 Tim 3, Titus 1:5-9)</cite> that is, the local church is sovereign under Christ's headship and all ecclesiastical power is exercised by each one of these churches assembled as a congregation.</p>
+                                <p>Decisions made must be according to the biblical principles, this ministers manual and the constitution.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Scope of Authority -->
-                <div class="belief-category">
-                    <h3 class="category-title">Scope of Authority</h3>
-                    <div class="authority-content">
-                        <div class="authority-item" data-aos="slide-right" data-aos-delay="100">
-                            <div class="authority-number">1</div>
-                            <div class="authority-text">
-                                <p>We believe that the kingdom of God's government is theocratic, Christ being sovereign and reigning head who builds, governs and sets her in order through leadership ministry of apostles, prophets, evangelists, pastors and teachers.</p>
-                            </div>
-                        </div>
-
-                        <div class="authority-item" data-aos="slide-right" data-aos-delay="200">
-                            <div class="authority-number">2</div>
-                            <div class="authority-text">
-                                <p>We believe the church must have a person of Christ's appointing as the spiritual leader as discerned by the church leadership.</p>
-                            </div>
-                        </div>
-
-                        <div class="authority-item" data-aos="slide-right" data-aos-delay="300">
-                            <div class="authority-number">3</div>
-                            <div class="authority-text">
-                                <p>We know that democracy is not an appropriate form of government for the New Testament church as it is not supported by God's pattern shown in the Holy Scriptures.</p>
-                            </div>
-                        </div>
-
-                        <div class="authority-item" data-aos="slide-right" data-aos-delay="400">
-                            <div class="authority-number">4</div>
-                            <div class="authority-text">
-                                <p>Leaders shall be appointed according to gifting, grace and calling. This shall be done by the relevant authorities as stipulated in this document.</p>
-                            </div>
-                        </div>
-
-                        <div class="authority-item" data-aos="slide-right" data-aos-delay="500">
-                            <div class="authority-number">5</div>
-                            <div class="authority-text">
-                                <p>We pursue family covenant relationships which we believe to be the true pattern for New Testament church. There are three (3) ministry structures in the Wells of Revival Ministry:</p>
-                                <ul>
-                                    <li>Local church structure</li>
-                                    <li>Regional council</li>
-                                    <li>National council</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Principle of Autonomy -->
-                <div class="belief-category">
-                    <h3 class="category-title">Principle of Autonomy</h3>
-                    <div class="autonomy-content" data-aos="fade-up" data-aos-delay="100">
-                        <div class="autonomy-text">
-                            <p>We hold as Scripture and fundamental the principle of local church government by men and women of character and integrity according to <em>(1 Tim 3, Titus 1:5-9)</em> that is, the local church is sovereign under Christ's headship and all ecclesiastical power is exercised by each one of these churches assembled as a congregation.</p>
-                            <p>Decisions made must be according to the biblical principles, this ministers manual and the constitution.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-   
-             
-    <footer>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer role="contentinfo">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <img src="images/logo.jpeg" alt="Wells of Revival Church Logo" width="80" height="80" loading="lazy">
                 <h3>Wells of Revival</h3>
                 <p>Raising Men and Women of Integrity.</p>
             </div>
             <div class="footer-contact">
                 <h4>Contact Us</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Majengo, Thika, Kenya</p>
-                <p><i class="fas fa-phone"></i> +254-727-502-355</p>
-                <p><i class="fas fa-envelope"></i>thewellsofrevival.ke@gmail.com</p>
+                <address>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Majengo, Thika, Kenya</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+254727502355" style="color: white !important;">+254-727-502-355</a></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:thewellsofrevival.ke@gmail.com" style="color: white;">thewellsofrevival.ke@gmail.com</a></p>
+                </address>
             </div>
             <div class="footer-services">
+                <h4>Service Times</h4>
                 <ul>
                     <li>First service: 8:00 AM - 9:30 AM</li>
-                    <li>Second Service: 10:00 AM - 11:30 PM</li>
-                    <li>Descipleship/Mentorship Classes <br> 11:45AM - 12:30 PM </li>
+                    <li>Second Service: 10:00 AM - 11:30 AM</li>
+                    <li>Discipleship/Mentorship Classes<br>11:45 AM - 12:30 PM</li>
                 </ul>
             </div>
             <div class="footer-social">
                 <h4>Connect With Us</h4>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/TheWellsOfRevivalKenya"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/thewellsofrevivalministries/"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/TheWellsOfRevivalKenya" aria-label="Visit our Facebook page" rel="noopener" target="_blank">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/thewellsofrevivalministries/" aria-label="Visit our Instagram page" rel="noopener" target="_blank">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Visit our YouTube channel" rel="noopener" target="_blank">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" aria-label="Visit our Twitter page" rel="noopener" target="_blank">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -334,11 +409,11 @@
             <p>&copy; 2025 Wells of Revival. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/ministry.js"></script>
-    <script src="js/extraabout.js"></script>
-    <!-- <script src="js/about.js"></script> -->
+    
+    <!-- Scripts loaded at the end for better performance -->
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/ministry.js" defer></script>
+    <script src="js/extraabout.js" defer></script>
 </body>
 </html>
