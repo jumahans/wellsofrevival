@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
         currentModalIndex = (currentModalIndex + 1) % galleryItems.length;
         openModal(currentModalIndex);
     });
+    // section for block content 
 
     document.addEventListener('keydown', (e) => {
         if (modal.style.display === 'block') {

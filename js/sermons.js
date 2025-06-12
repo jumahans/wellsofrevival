@@ -46,14 +46,9 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function(e) {
             e.preventDefault();
             
-            // Remove active class from all buttons
             paginationButtons.forEach(btn => btn.classList.remove('active'));
             
-            // Add active class to clicked button
             this.classList.add('active');
-            
-            // Here you would typically load the next page of sermons
-            // For demo purposes, we'll just scroll to top of sermon grid
             document.querySelector('.sermon-grid').scrollIntoView({
                 behavior: 'smooth'
             });
